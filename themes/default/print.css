@@ -1,0 +1,15 @@
+body, table, td {
+ margin:0px;
+ padding:10px;
+ font-family: Verdana, Arial, sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 12px;
+ background-color: white;
+ color: black;
+}
+
+table { width: 100%; padding: 0px; margin: 0px; border: 1px solid #6B6C69; border-right: 0px;}
+td { padding: 5px; border-right: 1px solid #6B6C69;}
+
+thead td { font-weight: bold; border-bottom: 1px solid #6B6C69; background-color: #6B6C69; color: white;}

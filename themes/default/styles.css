@@ -1,0 +1,1244 @@
+body, table, td {
+ margin:0px;
+ padding:0px;
+ font-family: Verdana, Arial, sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 11px;
+ background-color: white;
+ color: #6B6C69;
+}
+
+body {
+	border: 1px solid #6484a4;
+}
+
+table {
+	border-spacing: 0px;
+	width: 100%;
+}
+
+a {
+	color: #6484a4;
+}
+
+a:hover {
+	color: #666;
+}
+#projectchoices ul{
+	background-color: #ddd;
+}
+#projectchoices li.selected {
+	background-color: blue;
+}
+td.logout {
+	text-align: right;
+	padding: 2px 5px 2px 5px;
+}
+
+#modules {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+#menu1 {
+	width: auto;
+}
+
+.ddm1 .item1,
+.ddm1 .item1:hover,
+.ddm1 .item1-active,
+.ddm1 .item1-active:hover, a.item1:hover, a.item1 {
+	background-color: #666;
+	background-image: url('graphics/corner.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding: 2px 10px 2px 10px;
+	color: white;
+	text-decoration: none;
+}
+
+div.section {
+	margin-top: 2px;
+	margin-left: 1px;
+	border-bottom: 1px solid #666;
+}
+
+div.section a {
+	border: 1px solid #666;
+	border-bottom: 0px;
+	padding: 1px 9px 2px 9px;
+	text-decoration: none;
+	color: white;
+}
+
+#menu1 div.section a:hover {
+	color: #ccc;
+	background-color: #666;
+}
+
+a.item1:hover {
+	background-color: blue;
+}
+
+#modules a.on, td.bar {
+	background-color: #6484a4;
+	color: white;
+	padding: 2px 10px 2px 10px;
+}
+
+td.bar {
+	text-align: center;
+}
+
+td.bar a {
+	color: white;
+}
+
+#currentTask option.project {
+	font-weight:bold;
+}
+#currentTask option.task {
+
+}
+#currentTask option.head {
+
+}
+#modules a.item2 {
+	background-color: #999;
+}
+
+#submenu td, #subitems td, #crossAssigned td, #category td {
+	background-color: #999;
+	border-right: 1px solid #6484a4;
+	border-bottom: 1px solid #6484a4;
+}
+
+#subitems td {
+	border-bottom: none;
+}
+
+#menu td.logo {
+	width: 175px;
+}
+
+#submenu, #body {
+	padding-bottom: 5px;
+}
+
+#lowermodules {
+	width: auto;
+	margin: auto;
+	color: #6484a4;
+	text-align: center;
+}
+
+#lowermodules td {
+	text-align:  center;
+	padding: 2px;
+}
+
+#lowermodules td.modules {
+	border-top: 1px solid #6484a4;
+	border-bottom: 1px solid #6484a4;
+}
+
+#submenu td.header, #subitems td.header, #crossAssigned td.header, #category td.header {
+	background-color: #666;
+	color: white;
+	font-weight: bold;
+	padding: 2px 2px 2px 10px;
+}
+
+#lowermodules p {
+	font-size: 9px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#body td {
+	vertical-align: top;
+}
+
+#mainbody {
+	margin: 10px;
+	margin-bottom: 5px;
+}
+
+#chooser #mainbody {
+	margin: 0px;
+	padding: 10px;
+}
+
+#overview, #page, #pageFooter {
+	border: 1px solid #666;
+	width: 100%;
+}
+
+#pageFooter {
+	margin-bottom: 0px;
+	border-top: 0px;
+}
+
+#page {
+	margin-top: 10px;
+	border-bottom: 0px;
+}
+
+#page td, #pageFooter td {
+	background-color: #ccc;
+	color: #333;
+	padding: 1px 2px 1px 2px;
+	font-size: 9px;
+}
+
+#pageFooter td.page, #page td.page {
+	text-align: right;
+	font-size: 9px;
+	color: #999;
+	vertical-align: middle;
+}
+
+#pageFooter a, #page a {
+	color: #6484a4;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#pageFooter a:hover, #page a:hover {
+	color: #333;
+}
+
+#mainbody td.headingEdit {
+	border-bottom: 1px solid #666;
+	font-weight: bold;
+	vertical-align: bottom;
+	padding-bottom: 2px;
+	text-align: right;
+}
+
+#mainbody td.heading {
+	border-bottom: 1px solid #666;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#mainbody thead td.searchheading {
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #efefef;
+	background-image: url('graphics/search.png');
+	border-bottom: 1px solid #666;
+	color: #666;
+	text-align: left;
+}
+
+#mainbody thead td.searchswitch {
+	background-color: #ccc;
+	background-color: #efefef;
+	background-image: url('graphics/search.png');
+	border-bottom: 1px solid #666;
+	color: #666;
+	text-align: right;
+	vertical-align: middle;
+}
+
+table.search td {
+	font-size: 11px;
+}
+
+#overview thead td, table.homeOps thead td {
+	border-bottom: 1px solid #6484a4;
+	color: #666;
+	text-align: left;
+	vertical-align: middle;
+	background-image: url('graphics/list.png');
+	height: 20px;
+	padding: 0px 2px 0px 2px;
+	white-space: nowrap;
+}
+
+#overview td {
+	padding: 0px 2px 0px 2px;
+}
+
+#overview tbody td {
+	padding: 2px;
+}
+
+#overview thead a {
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#overview thead a:hover {
+	color: #333;
+}
+
+#mainbody td.search {
+	padding-top: 1px;
+}
+
+
+button, select, input, textarea {
+	margin: 0px;
+	padding: 1px;
+	border: 1px solid #666;
+	font-family: Verdana, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	height: 14px;
+
+}
+
+select.multiple {
+	height: 100px;
+}
+
+select.multiplesmall {
+	height: 100%;
+}
+
+input.scrollsave, input.scrollsaveon {
+	padding: 0px;
+	margin: 0px;
+	color: #6484a4;
+	font-weight: bold;
+	height: 14px;
+   background-color: transparent;
+   text-decoration: underline;
+   border: none;
+   cursor: pointer;
+   cursor: hand;
+	margin-left: -3px;
+	margin-right: -3px;
+}
+
+input.scrollsaveon {
+	color: #6B6C69;
+}
+
+select.scroll {
+	width: 100%;
+	height: 100px;
+}
+
+#saveformtable input.image {
+	border: none;
+	height: 16px;
+	width: 16px;
+	padding: 0px;
+	margin: 0px;
+}
+
+button, input.button, #saveformtable input.button {
+	height: 18px;
+	width: auto;
+}
+
+select {
+	padding: 0px;
+	height: 16px;
+	min-width: 150px;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+}
+
+textarea.small {
+	height: 30px;
+	width: 250px;
+}
+
+textarea.medium {
+	height: 100px;
+}
+
+#mainbody table.search {
+	border: 1px solid #666;
+}
+
+#mainbody table.search td {
+	padding: 5px;
+	width: 33%;
+}
+
+td.centre {
+	text-align: center;
+	padding: 5px;
+}
+
+.calendar {
+	width: 250px;
+}
+
+#saveformtable td {
+	width: 200px;
+}
+
+#saveformtable input, #saveformtable select {
+	width: 150px;
+	
+}
+
+#saveformtable input.radiopair, #saveformtable input.datefield {
+	width: 150px;
+}
+#saveformtable input.datetimefield {
+	width: 75px;
+}
+#saveformtable input.timefield {
+	width: 20px;
+}
+#saveformtable input.radiopair {
+	width: 135px;
+}
+
+#saveformtable td.radio {
+	width: auto;
+}
+
+#saveformtable input.file {
+	width: auto;
+}
+#crossAssigned input.timefield, #category input.timefield, #currentTask input.timefield{
+	width: 20px;
+}
+td.choose {
+	vertical-align: center;
+}
+
+div.choose {
+	width: 150px;
+	padding-right: 5px;
+}
+
+#saveformtable td {
+	text-align: left;
+	padding: 0px 5px 5px 5px;
+}
+
+#saveformtable {
+	width: 100%;
+	border: 1px solid #666;
+	padding: 5px 5px 0px 5px;
+}
+
+span.compulsory {
+	color: red;
+	font-weight: bold;
+}
+
+#saveformtable td.split {
+
+	padding-left: 5px;
+}
+#saveformtable table {
+	width: auto;
+}
+
+#saveformtable table.split td {
+	padding: 0px;
+}
+
+#saveformtable table.split td.input {
+	padding-right: 5px;
+	width: auto;
+}
+
+#saveformtable table.split td.short {
+	width: 25px;
+	padding-right: 5px;
+}
+
+.right {
+	text-align: right;
+}
+
+#formsave {
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+
+#formsave td {
+	vertical-align: bottom;
+}
+
+#saveformtable td.desc {
+	width: 100%;
+}
+
+#saveformtable td.fck {
+	height: 505px;
+}
+
+#saveformtable td.fck div {
+	padding: 0px;
+	margin: 0px;
+	height: 350px;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	color: #6484a4;
+}
+
+#saveformtable td.ul, #saveformtable td.ulr {	
+	border-bottom: 1px solid #666;
+	margin-bottom: 5px;
+}
+
+#saveformtable td.ulr {
+	text-align: right;
+}
+
+#saveformtable input.checkbox, #saveformtable input.radio {
+	width: auto;
+	vertical-align: middle;
+}
+
+#errors, #messages {
+	margin: 10px;
+	border: 1px solid #666;
+}
+
+#errors thead td, #messages thead td {
+	background-color: red;
+	border-bottom: 1px solid #666;
+	color: white;
+	font-weight: bold;
+}
+
+#messages thead td {
+	background-color: green;
+}
+
+#errors td, #messages td {
+	padding: 5px;
+}
+
+#overview tbody td {
+	background-color: transparent;
+}
+
+#overview tbody tr.over {
+	background-color: #ccc;
+}
+
+#overview tbody tr.on {
+	background-color: #eee;
+}
+
+#viewcase table.bottomData td {
+	background-color: transparent;
+}
+
+#overview tbody td.on {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+
+#overview tbody td.onoff {
+	border-top: 1px solid #666;
+	border-bottom: 0px;
+}
+
+#overview thead td.ordered a {
+	color: #333;
+}
+
+td.toggle {
+	width: 20px;
+	text-align: center;
+}
+
+#viewcase {
+	width: 100%;
+
+}
+
+#viewcase td.left, #viewcase td.leftBold {
+	width: 70%;
+}
+
+#viewcase td {
+	vertical-align: top;
+}
+
+#viewcase td.right {
+	width: 30%;
+}
+
+table.view {
+	margin-right: 20px;
+}
+
+.view {
+	width: 100%;
+}
+
+#viewcase td.leftcol {
+	padding-top: 10px;
+}
+
+#viewcase .view td.left, #viewcase .view td.leftBold {
+	vertical-align: top;
+	width: 20%;
+	text-align: right;
+	color: #999;
+}
+
+#viewcase .view td.leftBold {
+	font-weight: bold;
+	color: #333;
+	font-size: 12px;
+}
+
+#viewcase table.viewTitle, #viewcase table.viewTitlePad {
+	padding-top: 10px;
+}
+
+#viewcase table.viewTitlePad {
+	padding-bottom: 10px;
+}
+
+#viewcase table.viewTitle td, #viewcase table.viewTitlePad td {
+	border-bottom: 1px solid #333;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#viewimage {
+	text-align: center;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+#viewimage img {
+	border: none;
+	max-width: 100%;
+}
+
+#viewcase .view td {
+	width: 30%;
+	font-weight: bold;
+	padding: 2px 5px 2px 5px;
+	color: #333;
+}
+
+#viewcase td.right {
+	padding-top: 10px;
+	padding-left: 10px;
+	vertical-align: top;
+	border-left: 1px solid #999;
+}
+
+#viewcase table.rightData td, table.homeItem td {
+	text-align: left;
+	padding: 2px 5px 2px 5px;
+}
+
+#viewcase table.rightData td.note {
+	padding-bottom: 10px;
+}
+
+#viewcase table.rightData td.note a {
+	text-decoration: none;
+	color: #333;
+}
+
+#viewcase table.rightData td.note a:hover {
+	color: #6484a4;
+}
+
+#viewcase table.rightData, table.homeItem  {
+	margin-bottom: 10px;
+}
+
+div.scroll {
+	overflow: auto;
+	height: 100px;
+	padding: 5px;
+}
+
+div.nopadscroll {
+	padding: 0px;
+	overflow: auto;
+	max-height: 100px;
+}
+
+#viewcase table.scroll td, #viewcase table.scroll td.scroll p {
+	padding: 0px;
+	margin: 0px;
+}
+
+#viewcase table.rightData td.title, #viewcase table.rightData td.titleright , #viewcase table.bottomData td.title, table.homeItem td.title {
+
+	color: #999;
+	font-weight: bold;
+	font-size: 14px;
+	border-bottom: 1px solid #999;
+}
+
+#viewcase table.bottomData td.row {
+	border-bottom: 1px solid #999;
+}
+
+#viewcase table.bottomData td.title a {
+	text-decoration: none;
+}
+
+#viewcase table.bottomData td.title {
+	border: none;
+}
+
+#viewcase table.bottomData td, #viewcase table.bottomData {
+	border-collapse: collapse;
+}
+
+#viewcase table.bottomData td.body {
+	border-top: 1px solid #333;
+}
+
+#viewcase table.rightData td.scroll {
+	padding: 10px;
+	margin: 0px;
+}
+
+#viewcase table.rightData td.titleright {
+	text-align: right;
+}
+
+#viewcase table.bottomTitle {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#viewcase table.bottomTitle td.header {
+	font-size: 14px;
+	font-weight: bold;
+	color: #999;
+	border: none;
+	border-bottom: 1px solid #999;
+	padding: 5px;
+}
+
+#viewcase td.icon {
+	width: 35px;
+	text-align: left;
+	padding: 0px;
+	padding-top: 5px;
+}
+
+#viewcase table.bottomTitle td.right {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-bottom: 1px solid #999;
+	border-left: none;
+	padding: 5px;
+}
+
+#viewcase table.bottomData {
+	border-bottom: 2px solid #666;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#viewcase table.bottomData td {
+	padding: 2px 5px 2px 5px;
+}
+
+#viewcase table.bottomData tr.over {
+	background-color: #CCC;
+}
+
+#viewcase table.bottomData td.header, #viewcase table.bottomData td.headerstretched {
+	color: #666;
+	font-weight: bold;
+	border-bottom: 2px solid #666;
+	white-space: nowrap;
+	font-size: 12px;
+	padding-bottom: 2px;
+}
+
+#viewcase table.bottomData td.headerstretched {
+	width: 100%;
+}
+
+#viewcase table.bottomData td.stretched {
+	white-space: nowrap;
+}
+
+#viewcase td.overdue {
+	color: red;
+	text-decoration: blink;
+}
+
+#saveformtable input.short {
+	width: 25px;
+}
+
+#image {
+	margin: 10px;
+	margin-bottom: -10px;
+}
+
+iframe {
+	border: none;
+	width: 100%;
+	overflow: hidden;
+padding-bottom: 10px;
+}
+
+#iframeholder {
+	padding: 10px;
+	min-height: 400px;
+	height: 100%;
+}
+
+#iframeholderwiki {
+	padding: 0px;
+}
+
+#iframeholderfile {
+	padding: 6px;
+}
+
+#iframeholderweberp {
+	padding: 0px;
+	padding-left: 5px;
+}
+
+#scrollsave {
+	border: 0px;
+	width: 90%;
+	padding: 2px;
+}
+
+a.expand, span.hide {
+	text-decoration: none;
+	font-family: courier;
+	font-size: 12px;
+}
+
+textarea.file {
+	width: 100%;
+	height: 100px;
+}
+
+td.file input, input.file, input[type="file"] {
+	height: 20px;
+	border: 1px solid #333;
+}
+
+#reportdatedate {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+#submenu table.split td, #subitems table.split td {
+	padding: 2px;
+	margin: 0px;
+	border: none;
+}
+
+#submenu table.split td.input {
+	width: 75px;
+}
+
+#submenu table.split, #subitems table.split {
+	width: auto;
+}
+
+#submenu td.split, #subitems td.split {
+	padding: 0px;
+	margin: 0px;
+}
+
+#submenu input.date { width: 75px; }
+
+#submenu input.submit { height: 18px; }
+#currentTask input.submit {height: 18px; width: 150px;}
+#submenu td.icon { width: 16px; height: 16px; border-top: none; border-bottom: none; padding-left: 2px; padding-right: 2px;}
+
+#submenu td.iconlink { width: 159px; border: none; padding-left: 2px; padding-right: 2px; color: white;}
+
+#submenu td.iconlink a { color: #333; }
+#submenu td.iconlink a:hover { color: #666; }
+
+#subitems td.iconlink a { color: #333; }
+#subitems td.iconlink a:hover { color: #666; }
+
+#mainbody td.add {
+	padding-top: 10px;
+}
+
+#ticketreply textarea {
+	border: none;
+	font-family: courier;
+}
+
+#ticketreply {
+	margin-bottom: 5px;
+}
+
+input.ticketreply {
+	margin-top: 5px;
+}
+
+#viewcase #normal {
+	font-size: 11px;
+}
+
+
+#contactsform {
+	padding: 0px;
+	margin: 0px;
+}
+
+#mainbody td.dashboard {
+	padding-top: 10px;
+}
+
+
+td.homepage {
+	width: 50%;
+	padding-right: 10px;
+}
+
+#homepage {
+	padding: 10px;
+	padding-right: 0px;
+}
+
+table.homeItem p { padding: 0px; margin: 0px; }
+table.homeItem p.finishMessage { padding-bottom: 5px; border-bottom: 1px solid #999; }
+table.homeItem p.startMessage { padding-top: 5px;}
+
+table.homeItem td.nopad {padding: 0px; margin: 0px;}
+table.homeItem td.pipeline {padding: 5px; margin: 0px; text-align: center;}
+
+table.news, table.news td.news { padding: 0px; margin: 0px; }
+
+table.news td.news {width: 50%; }
+
+table.news td.newsleft { padding-right: 10px; }
+
+table.homeOps { width: 100%; padding: 0px; margin: 0px; }
+
+table.homeOps td { border-right: 1px solid #999;}
+
+table.homeOps td.noborderred, table.homeOps thead td, table.homeOps td.noborderamber, table.homeOps td.nobordergreen, {border-right: none;}
+
+table.homeOps thead td { font-weight: bold; vertical-align: middle;border-bottom: 1px solid #999;}
+
+span.toggle {padding: 0px; margin: 0px; padding-left: 10px;}
+
+#ca, #setupcat, #ct { padding: 0px; margin: 0px; }
+
+table.homeOps td.red, table.homeOps td.noborderred {background-color: #ff9999;}
+table.homeOps td.amber, table.homeOps td.noborderamber {background-color: #ffebeb;}
+table.homeOps td.green, table.homeOps td.nobordergreen {background-color: #ffe6e6;}
+
+#viewcase td.nonbold {font-weight: normal;}
+
+.setupedit { width:35%;}
+.editSubTitle {
+	border-bottom: 1px solid #6484a4;
+	color: #666;
+	text-align: left;
+	vertical-align: middle;
+	background-image: url('graphics/list.png');
+	height: 20px;
+	padding: 0px 2px 0px 2px;
+	white-space: nowrap;
+}
+
+#currentTask select, #currentTask input {
+	width: 143px;
+}
+
+#desktop table {
+	width: 100%;
+	margin: 10px;
+}
+
+#desktop td {
+	vertical-align: top;
+}
+
+#desktop td, #desktop table.desktop {
+	padding: 0px;
+	margin: 0px;
+}
+
+#desktop td.right {
+	text-align: right;
+}
+
+#desktop table tbody td {
+	width: 50%;
+	padding: 0px;
+}
+
+#desktop table.desktop {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#desktop table.item td.header {
+	font-size: 12px;
+	font-weight: bold;
+	color: #999;
+	border: none;
+	border-bottom: 1px solid #999;
+	padding: 5px;
+}
+
+#desktop table.item td.header a {
+	text-decoration: none;
+	color: #999;
+}
+
+#desktop table.item td {
+	font-size: 11px;
+	color: #666;
+	border: none;
+	padding: 5px;
+}
+
+#desktop table thead td {
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	border: none;
+	border-bottom: 1px solid #666;
+	padding: 10px;
+}
+
+#desktop table.desktop tbody td {
+	padding-right: 0px;
+	padding-left: 10px;
+}
+
+#desktop table.desktop tbody td.border {
+	border-right: 1px solid #999;
+	padding-right: 10px;
+	padding-left: 0px;
+}
+
+li {list-style-type: square;}
+#desktop ul {
+	margin-left: 10px;
+	padding-left: 5px;
+}
+
+#desktop table.item td {
+	width: 100%;
+}
+
+#desktop table.item td.item {
+	padding: 10px 0px 10px 0px;
+}
+
+#desktop table.item td.icon img {
+	width: 25px;
+	height: 25px;
+	text-align: left;
+}
+
+#desktop table.item td.icon {
+	width: 35px;
+	text-align: left;
+	padding: 0px;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+#desktop table.opps tbody td, #desktop table.opps thead td {
+	padding: 2px;
+	margin: 0px;
+	width: auto;
+}
+
+#desktop table.opps tbody td {
+	border-bottom: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+#desktop table.opps thead td {
+	border-bottom: 2px solid #666;
+}
+
+#desktop table.opps {
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 2px solid #666;
+	border-collapse: collapse;
+}
+
+#desktop .centre {
+	text-align: center;
+}
+
+#desktop table.opps a {
+	border-bottom: 1px dotted #666;
+	text-decoration: none;
+}
+
+div#sideBar {
+	display: none;
+border-top: 5px solid #CCC;
+}
+table.corner {
+width: 168px;
+border: 5px solid #CCC;
+border-top: 0px;
+border-right: 0px;
+}
+
+table.corner a {
+	text-decoration: none;
+	color: #666;
+}
+
+table.corner a:hover {
+	border-bottom: 1px solid #CCC;
+}
+
+table.corner thead td {
+background-color: #666;
+background-image: 
+url('/themes/senokian/graphics/corner.gif');
+background-repeat: 
+no-repeat;
+background-position: 
+ top right; 
+	font-size: 12px;
+	font-weight: bold;
+	color: #CCC;
+	padding: 2px 5px 0px 5px;
+}
+
+table.corner tbody td {
+	border: 2px solid #666;
+	padding: 5px;
+	vertical-align: top;
+}
+
+table.corner tbody td.company {
+	border: 2px solid #666;
+	padding: 0px;
+}
+
+#currentTask tbody td { 
+	border: 0px;
+	border-left: 2px solid #666;
+	border-right: 2px solid #666;
+}
+
+#currentTask thead td, #currentTask tbody td.bottom {
+	border-bottom: 2px solid #666;
+}
+
+table.corner select {
+	width: 160px;
+}
+
+#button, #bodyarea {
+	position: absolute;
+	top: 65px;
+	left: 0px;
+	width: 18px;
+	z-index: 2;
+	padding: 0;
+	margin: 0;
+}
+
+#bodyarea {
+	width: auto;
+	z-index: 0;
+	left: 20px;
+}
+
+#sideBar {
+	width: 175px;
+	position: absolute;
+	left: 0px;
+	top: 65px;
+	z-index: 2;
+	background-color: #CCC;
+	border: 1px solid #666;
+	padding: 0;
+	margin: 0;
+}
+
+#footer {
+	position: relative;
+}
+
+#desktop img, #desktop table.opps a.img {
+	border: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+#desktop td.iconsmall, #desktop td.iconsmall img {
+	width: 16px;
+}
+
+#bodyheader {
+	padding: 10px;
+}
+
+#bodyheader td.headingTitle, #bodyheader td.headingEdit {
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	border-bottom: 1px solid #666;
+	padding: 10px;
+}
+
+#bodyheader td.headingEdit {
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+}
+
+#bodyheader td.heading {
+	width: 48px;
+	vertical-align: top;
+	padding-right: 10px;
+	border: none;
+}
+
+p.empty {
+	color: #999;
+	text-align: center;
+}
+
+td.scroll p {
+	padding: 0px 0px 2px 0px;
+	margin: 0px;
+}
+
+table.rightData td.icon {
+	width: 25px;
+}
+#form1{position:relative;z-index:0;border:1px solid black}
+#participant{width:160px;}
+
+#body td.heading {
+	color: blue;

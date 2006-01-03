@@ -1,0 +1,18 @@
+Strona w Twoim DokuWiki została dodana lub zmieniona. 
+Szczegółowe informacje:
+
+Data         : @DATE@
+Użytkownik   : @BROWSER@
+Adres IP     : @IPADDRESS@
+Komputer     : @HOSTNAME@
+Stara wersja : @OLDPAGE@
+Nowa wersja  : @NEWPAGE@
+Opis zmian   : @SUMMARY@
+User         : @USER@
+
+@DIFF@
+
+
+-- 
+List został wygenerowany przez DokuWiki pod adresem
+@DOKUWIKIURL@

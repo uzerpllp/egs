@@ -1,0 +1,5 @@
+====== Søg ======
+
+Resultaterne af din søgning kan du finde nedenunder. Hvis resultaterne ikke indeholder det du søgte efter kan du oprette et nyt dokument med samme navn som søgningen ved at trykke på knappen **''[Rediger dette dokument]''** i toppen til venstre hjørne.
+
+===== Resultater =====

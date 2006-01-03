@@ -1,0 +1,19 @@
+.ddm1 .item1,
+.ddm1 .item1:hover,
+.ddm1 .item1-active,
+.ddm1 .item1-active:hover {
+    display: block;
+    position: relative;
+}
+.ddm1 .item2,
+.ddm1 .item2:hover {
+    display: block;
+    white-space: nowrap;
+}
+.ddm1 .section {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    white-space: nowrap;
+}
+* html .ddm1 td { position: relative; } /* ie 5.0 fix */

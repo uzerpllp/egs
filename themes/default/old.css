@@ -1,0 +1,874 @@
+body {
+ margin:0px;
+ padding:0px;
+ font-family: Arial, Verdana, Helvetica, sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 10px;
+ background-color: white;
+ height: 100%;
+}
+
+div, table, p {
+ font-family: Arial, Verdana, Helvetica, sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 10px;
+}
+
+div.header, div.footermenu {
+ width: 100%;
+ height: 60px;
+ position: fixed;
+ z-index: 1000;
+}
+
+div.contenthide, div.searchblock, div.contentnav, div.contentheader {
+ z-index: 10000;
+ background-color: white;
+ position: fixed;
+ top: 55px;
+ margin-right: 185px;
+ margin-left: 10px;
+ z-index: 1000;
+}
+
+div.contenthide, div.contentheader {
+ margin-left: 0;
+ font-weight: bold;
+ font-size: 12px;
+ border-bottom: 1px dotted #626A69;
+ text-align: left; 
+ right: 0;
+ left: 0;
+ top: 40px;
+ padding-top: 15px;
+ margin-left: 9px;
+ border-left: 1px solid white;
+}
+
+div.contenthide {
+ border: 0;
+ top: 70px;
+ height: 19px;
+ padding: 0;
+ margin: 0;
+}
+
+div.contentmodify {
+ text-align: right;
+ position: absolute;
+ right: 0;
+ top: 0;
+ font-size: 10px;
+ font-weight: normal;
+ padding-top: 15px;
+}
+
+div.mainmenu, div.projectssubmenu, div.calendarsubmenu, div.imagessubmenu, div.domainsubmenu, div.adminsubmenu, div.systemadminsubmenu, div.ticketingsubmenu, div.contactssubmenu, div.homesubmenu {
+ height: 10px;
+ background-color: #BABDB6;
+ margin-right: 175px;
+ margin-left: 0;
+ padding: 5px;
+}
+
+a.submenu, a.submenu:active, a.submenu:visited, a.submenu:hover {
+ color: white;
+}
+
+div.copyright a, div.copyright a:active, div.copyright a:hover, div.copyright a:visited, div.copyright a, div.copyright a:active, div.copyright a:hover, div.copyright a:visited {
+ color: white;
+}
+
+hr {
+ border: 0;
+ border-bottom: 1px dotted #626A69;
+ padding-top: 5px;
+}
+
+div.mainmenu a, div.mainmenu a:active, div.mainmenu a:hover {
+ border-top: 5px solid #BABDB6;
+ border-bottom: 0;
+ color: #333;
+ text-decoration: none;
+ margin: 0 5px 0 5px;
+ font-weight: bold;
+}
+
+div.sideblock form {
+ padding: 0;
+ margin: 0;
+}
+
+select, input, input.checkbox {
+ padding: 2px;
+ font-family: Arial, Verdana, Helvetica, sans-serif;
+ border: 1px solid #333;
+}
+
+div.content input.checkbox {
+ width: 12px;
+ height: 12px;
+ margin: 0;
+}
+
+input.off, div.sideblock input, div.sideblock select {
+ font-size: 10px;
+ padding: 2px;
+ margin: 0;
+}
+
+div.sideblock select {
+ padding: 0;
+}
+
+input.contactson {
+ padding: 2px;
+ background-color: #E00000;
+ color: white;
+}
+
+div.sideblock input, input.off {
+ width: 148px;
+}
+
+a, a:active, a:visited, a:hover {
+ text-decoration: none;
+ color: #333;
+ border-bottom: 1px dotted #333;
+}
+
+a:hover {
+ border-bottom: 1px dotted #BABDB6;
+}
+
+
+div.mainmenu a:hover {
+ border-top: 5px solid #333;
+ border-bottom: 0;
+}
+
+div.mainmenu a.imagesoff:hover, div.mainmenu a.imageson:hover {
+ border-top: 5px solid #6484A4;
+}
+
+div.mainmenu a.contactsoff:hover, div.mainmenu a.contactson:hover {
+ border-top: 5px solid #E00000;
+}
+
+div.mainmenu a.projectsoff:hover, div.mainmenu a.projectson:hover {
+ border-top: 5px solid #737E1F;
+}
+
+div.mainmenu a.imagesoff:hover, div.mainmenu a.imageson:hover {
+ border-top: 5px solid #6484A4;
+}
+
+div.mainmenu a.domainoff:hover, div.mainmenu a.domainon:hover {
+ border-top: 5px solid #E88000;
+}
+
+div.mainmenu a.adminoff:hover, div.mainmenu a.adminon:hover, div.mainmenu a.systemadminoff:hover, div.mainmenu a.systemadminon:hover {
+ border-top: 5px solid #9DB029;
+}
+
+div.mainmenu a.ticketingoff:hover, div.mainmenu a.ticketingon:hover {
+ border-top: 5px solid #4D4466;
+}
+
+div.mainmenu a.calendaroff:hover, div.mainmenu a.calendaron:hover {
+ border-top: 5px solid #C95616;
+}
+
+div.projectssubmenu, div.calendarsubmenu, div.imagessubmenu, div.domainsubmenu, div.adminsubmenu, div.systemadminsubmenu, div.ticketingsubmenu, div.contactssubmenu, div.homesubmenu {
+ text-align: center;
+ color: white;
+}
+
+div.projectssubmenu {
+ background-color: #737E1F;
+}
+
+div.calendarsubmenu {
+ background-color: #C95616;
+}
+
+div.imagessubmenu {
+ background-color: #6484A4;
+}
+
+div.domainsubmenu {
+ background-color: #E88000;
+}
+
+div.adminsubmenu, div.systemadminsubmenu {
+ background-color: #9DB029;
+}
+
+div.ticketingsubmenu {
+ background-color: #4D4466;
+}
+
+div.contactssubmenu {
+ background-color: #E00000;
+}
+
+div.homesubmenu {
+ background-color: #626A69;
+}
+
+/* following rules are invisible to IE 5 \*/
+div.contactssubmenu, div.homesubmenu {
+ margin-top: 0px;
+}
+/* end IE 5 hack */
+
+div.mainblock, div.searchblock, div.headblock, div.sideblock {
+ border: 1px dotted #333;
+ position: relative;
+ padding: 5px;
+ margin-bottom: 20px;
+ white-space: nowrap ;
+ text-align: left;
+}
+
+div.mainblock {
+ padding: 5px 0 0 0;
+}
+
+div.restrictExtra table.viewExtraData {
+ border: 0;
+ padding: 0;
+ border-spacing: 0;
+}
+
+div.headblock {
+ padding: 5px 2px 5px 2px;
+}
+
+div.searchblock {
+ position: absolute;
+ right: 0;
+ top: 55px;
+}
+
+div.headblock {
+ margin-bottom: 0;
+}
+
+div.headblock p, div.sideblock p {
+ padding: 0;
+ margin: 0;
+ text-align: left;
+}
+
+div.sideblock p {
+ padding-top: 2px;
+}
+
+div.mainheading, div.headblockheading, div.sideblockheading {
+ margin-top: -10px;
+ background-color: white;
+ padding-left: 5px;
+ padding-right: 5px;
+ text-align: right;
+ position: absolute;
+ top: 0;
+ right: 5px;
+ font-weight: bold;
+ color: #333;
+}
+
+div.projectslogo, div.homelogo, div.calendarlogo, div.imageslogo, div.domainlogo, div.adminlogo, div.systemadminlogo,  div.ticketinglogo,  div.contactslogo {
+ position: absolute;
+ height: 60px;
+ width: 175px;
+ top: 0;
+ right: 0;
+ background-image: url('graphics/homelogo.gif');
+ background-repeat: no-repeat;
+ background-position: top right;
+}
+
+div.projectslogo {
+ background-image: url('graphics/projectlogo.gif');
+}
+
+div.calendarlogo {
+ background-image: url('graphics/calendarlogo.gif');
+}
+
+div.imageslogo {
+ background-image: url('graphics/imagelogo.gif');
+}
+
+div.domainlogo {
+ background-image: url('graphics/domainlogo.gif');
+}
+
+div.adminlogo, div.systemadminlogo {
+ background-image: url('graphics/adminlogo.gif');
+}
+
+div.ticketinglogo {
+ background-image: url('graphics/ticketlogo.gif');
+}
+
+div.contactslogo {
+ background-image: url('graphics/contactlogo.gif');
+}
+
+div.footer {
+ position: absolute;
+ height: 55px;
+ width: 175px;
+ bottom: 0;
+ right: 0;
+ background-image: url('graphics/footer.gif');
+ background-repeat: no-repeat;
+ background-position: bottom right;
+ vertical-align: bottom;
+ text-align: right;
+}
+
+div.sidemenu {
+ position: fixed;
+ z-index: 1000;
+ top: 80px;
+ right: 0;
+ width: 165px;
+ padding: 10px;
+}
+
+div.contentView, div.content {
+ top: 60px;
+ bottom: 60px;
+ margin-right: 175px;
+ margin-left: 0;
+ position: absolute;
+ padding: 30px 10px 0 10px;
+ text-align: right;
+}
+
+div.content table {
+ text-align: left;
+ border: 1px solid #BABDB6;
+ padding: 0;
+ margin: 0;
+ border-spacing: 0;
+ border-collapse:collapse;
+}
+
+div.contentView table {
+ text-align: left;
+ padding: 0;
+ margin: 0;
+ border-spacing: 0;
+ border-collapse:collapse;
+}
+
+div.content td {
+ padding: 2px;
+ vertical-align: top;
+}
+
+div.content thead td {
+ white-space: nowrap ;
+}
+
+div.restrictExtra table.viewExtraData, div.contentView table.viewExtraData, div.contentView table.viewExtraDataScroll {
+ margin: auto;
+ width: 100%;
+}
+
+div.contentView table.viewExtraDataScroll {
+ margin-bottom: 0;
+}
+
+div.restrictExtra table.viewExtraData {
+ width: 100%;
+ border: 0;
+ padding: 0;
+ border-spacing: 0;
+}
+
+div.contentView div.restrictExtra, div.contentView div.restrict {
+ border: 1px dotted #BDBDBD;
+ max-height: 75px;
+ overflow: auto;
+ overflow-x: hidden;
+ padding: 2px;
+ border-top: 0;
+}
+
+div.contentView div.restrict {
+ margin-bottom: 10px;
+}
+
+table.viewExtraData td.headercontacts {
+ background-color: #E00000;
+ color: white;
+}
+
+div.contentView div.restrictExtra {
+ max-height: 66px;
+ overflow-x: hidden;
+ position: relative;
+ border: 0;
+ margin: 0;
+ margin-bottom: 5px;
+}
+
+div.contentView td.none, p.none {
+ text-align: center;
+ color: #BDBDBD;
+}
+
+div.contentView table.viewData {
+ margin: auto;
+ width: 96%;
+ margin-bottom: 10px;
+}
+
+div.contentView table.viewDataStump {
+ margin: auto;
+ width: 100%;
+ margin-bottom: 10px;
+}
+
+div.contentView td.spanner {
+ border: 0;
+ padding: 0;
+ padding-top: 10px;
+}
+
+div.contentView td.pad {
+ border: 0;
+ padding-left: 3px;
+ padding-right: 3px;
+}
+
+div.content input, div.content select {
+ width: 200px;
+}
+
+div.contentView td.logo {
+ vertical-align: middle;
+ text-align: center;
+}
+
+div.contentView td.logoPad {
+ border: 0;
+}
+
+div.contentView td {
+ padding: 2px 5px 2px 5px;
+ border: 1px dotted #BDBDBD;
+ vertical-align: top;
+}
+
+div.contentView td.viewLeft, div.contentView table.viewDataStump td.viewLeft {
+ border-left: 1px dotted #BDBDBD;
+ font-weight: bold;
+ text-align: right;
+ width: 16%;
+}
+
+div.contentView td.viewRight, div.contentView table.viewDataStump td.viewRight {
+ border-right: 1px dotted #BDBDBD;
+ width: 16%;
+}
+
+div.contentView table.viewDataStump td.viewLeft, div.contentView table.viewDataStump td.viewRight  {
+ width: 25%;
+}
+
+div.content td.titleprojects, div.contentView td.titleprojects, div.contentView span.titleprojects {
+ background-color: #737E1F;
+ color: white;
+ font-weight: bold;
+}
+
+div.content td.titlecontacts, div.contentView td.titlecontacts, div.contentView span.titlecontacts {
+ background-color: #E00000;
+ color: white;
+ font-weight: bold;
+}
+
+div.contentView span.titlecontacts {
+ border: 1px dotted #BDBDBD;
+ width: 100%;
+ padding: 2px 5px 2px 5px;
+}
+
+div.content td.viewPad {
+ border-top: 1px solid #626A69;
+ height: 10px;
+}
+
+div.content td.titlehome {
+ background-color: #626A69;
+ color: white;
+ font-weight: bold;
+}
+
+div.content table.overview {
+ width: 100%;
+ margin-bottom: 10px;
+ margin-right: 10px;
+ border: 1px dotted #BDBDBD;
+}
+
+div.content span.faded {
+ color: #BDBDBD;
+}
+
+div.content table.mainholder {
+ vertical-align: top;
+ padding: 0;
+ margin: auto;
+ border-spacing: 0;
+ border: 0;
+}
+
+div.content table.mainholder td {
+ vertical-align: top;
+}
+
+div.pad {
+ position:absolute;
+ left: 9px; 
+ width: 50%;
+ display: inline;
+ border-bottom: 1px dotted #626A69;
+}
+
+div.title {
+ display: inline;
+ background-color: white;
+ text-align: right; 
+ padding: 0 5px 0 5px;
+ margin-right: 5px;
+ width: auto;
+ margin-bottom: -3px;
+}
+
+div.content td.viewRight {
+ border-right: 1px dotted #626A69;
+ padding-right: 5px;
+}
+
+div.content td.viewLeftCompulsory, div.content td.viewLeft {
+ border-left: 1px dotted #626A69;
+ text-align: right;
+ padding-left: 5px;
+}
+
+div.content td.viewLeftCompulsory {
+ font-weight: bold;
+}
+div.content thead {
+ background-color: #BABDB6;
+}
+
+div.content thead td.none {
+ background-color: white;
+ border: 1px solid white;
+ border-bottom: 1px solid #626A69;
+}
+
+div.content thead td {
+ border-right: 1px solid white;
+}
+
+div.content tbody {
+ white-space: nowrap ;
+}
+
+div.content tbody tr.on {
+ background-color: #BABDB6;
+}
+
+td.datanone, td.dataCentre, td.data, td.last, td.databottom {
+ border: 1px dotted #626A69;
+ padding: 2px;
+}
+
+td.datanone, td.dataCentre {
+ text-align: center;
+}
+
+td.last, td.lastbottom {
+ border-right: 0px;
+}
+
+td.databottom, td.lastbottom {
+ border-bottom: 0px;
+}
+
+div.footermenu {
+ margin-top: 35px;
+ vertical-align: bottom;
+ bottom: 0;
+ position: fixed;
+ z-index: 1000;
+}
+
+div.footer p {
+ padding-top: 20px;
+ padding-right: 5px;
+}
+
+
+div.copyright {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ vertical-align: bottom;
+ color: white;
+ text-align: center;
+ width: 100%;
+ background-color: #BABDB6;
+ height: 13px;
+ margin-right: 175px;
+ vertical-align: bottom;
+ padding-top: 2px;
+}
+
+div.contentnav a {
+ border: 1px dotted #BABDB6;
+ padding: 2px;
+}
+
+div.contentnav a:hover {
+ background-color: #626A69;
+}
+
+div.sideblock p.submit {
+ padding-bottom: 2px;
+ text-align: right;
+ margin-top: 7px;
+}
+
+a.contactssubmit {
+ border: 1px dotted #BABDB6;
+ text-decoration: none;
+ padding: 2px;
+}
+
+a.contactssubmit:hover {
+ background-color: #E00000;
+ color: white;
+}
+
+a.on {
+ color: white;
+}
+
+td.headerCellcontactson, td.headerCellcontactsStretchedon {
+ background-color: #E00000;
+ color: white;
+ border: 1px solid #E00000;
+}
+
+td.headerCellcontactsStretchedoff, td.headerCellcontactsStretchedon {
+ width: 100%;
+}
+
+td.headerCellcontactson {
+ white-space: nowrap ;
+}
+
+a.contactsPage {
+ background-color: white;
+}
+
+div.headblock a.contactsPage:hover {
+ background-color: #E00000;
+ color: white;
+}
+
+div.sideblock input {
+ width: 147px;
+}
+
+div.sideblock select {
+ width: 153px;
+}
+
+div.contentView p {
+ padding: 0;
+ margin: 0;
+}
+
+div.message {
+ z-index: 1000;
+ position: absolute;
+ top: 70px;
+ margin: auto;
+ font-weight: bold;
+}
+
+div.contentView p.rightedit, p.right {
+ text-align: right;
+ white-space: nowrap ;
+ color: #BDBDBD;
+}
+
+div.contentView p.rightedit {
+ padding-bottom: 10px;
+}
+
+div.contentView p.rightEditFar {
+ text-align: right;
+ margin-top: -8px;
+ margin-bottom: 5px;
+ padding-bottom: 5px;
+ padding-right: 5px;
+}
+
+div.contentView p.rightEdit {
+ text-align: right;
+ padding-bottom: 5px;
+ padding-right: 5px;
+}
+
+div.sideblock p.rightEdit {
+ text-align: left;
+ padding: 0;
+}
+
+div.content input.radio {
+ width: auto;
+}
+
+div.content td {
+ vertical-align: middle;
+}
+
+div.content p.messagecontacts {
+ text-align: center;
+ font-weight: bold;
+ color: #E00000;
+}
+
+div.contentView td.rowspanner {
+ border: 0;
+ padding: 0;
+}
+
+div.content table.form {
+ border: 0px;
+}
+
+div.content table.form td.titlecontacts {
+ border: 1px dotted #626A69;
+}
+
+div.content table.form td.viewPad {
+ border-top: 1px dotted #626A69;
+}
+
+div.content table.form td.viewRightBottom {
+ border-right: 1px dotted #626A69;
+ border-bottom: 1px dotted #626A69;
+}
+div.content table.form td.viewLeftBottom {
+ border-left: 1px dotted #626A69;
+ border-bottom: 1px dotted #626A69;
+}
+
+div.calendar td, div.calendar table {
+ border: 0;
+ padding: 0;
+ margin: 0;
+ border-spacing: 0;
+}
+
+div.calendar td.titleright, div.calendar td.titleleft, div.calendar td.titleimage {
+ font-weight: bold;
+}
+
+div.contentheader a.calheader {
+ padding: 0 5px 0 0;
+ text-decoration: none;
+ border: 0;
+}
+
+div.contentheader img {
+ padding: 0;
+ border: 0;
+}
+
+div.sideblock table.date {
+ width: 98%;
+ border: 1px dotted #BDBDBD;
+ margin: auto;
+}
+
+div.sideblock td.G10BOLD {
+ font-weight: bold;
+ text-align: center;
+ color: #BDBDBD;
+}
+
+div.sideblock td.G10 {
+ width: 14%;
+ text-align: center;
+ border: 1px dotted #BDBDBD;
+}
+
+div.sideblock td.G10B {
+ width: 14%;
+ text-align: center;
+ border: 1px dotted #BDBDBD;
+ background-color: #C95616;
+}
+
+
+div.sideblock a.ps2 {
+ font-weight: bold; 
+ color: white;
+}
+
+div.sideblock span.G10G {
+ color: #BDBDBD;
+}
+
+div.content table.caleventt {
+ background-color: #C95616;
+ color: white;
+}
+
+div.content td.eventbg2_1 {
+ background-color: #C95616;
+ border: 1px dotted #BDBDBD;
+ vertical-align: top;
+ padding: 2px;
+}
+
+div.content td.cpad, div.content td.dayborder, div.content td.dayborder2 {
+ height: 10px;
+}
+
+div.content td.timeborder {
+ vertical-align: top;
+ width: 60px
+}
+
+div.content td.dayborder2, div.content td.dayborder, div.content td.timeborder {
+ border: 1px dotted #BDBDBD;
+}
+
+div.content td.dayborder {
+ border-top: 1px solid #BDBDBD;
+ width: 460px;
+}
+
+div.content td.eventbg_1, div.content td.eventborder, div.content td.eventborders {
+}
+
+div.content span.eventfont {
+ color: white;
+}
