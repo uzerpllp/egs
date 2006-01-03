@@ -1,0 +1,38 @@
+<PostcodeAnywhere Server="WS01" Version="3.0" Date="03/10/2005 17:04:07" Duration="0.016s">
+  <Schema Items="3">
+    <Field Name="id" />
+    <Field Name="seq" />
+    <Field Name="description" />
+  </Schema>
+
+  <Data Items="24">
+    <Item id="55046151.00" seq="0" description="Coventry Property Shop 71A Berkeley Road South Coventry" />
+    <Item id="49012605.00" seq="1" description="Criterion Theatre Berkeley Road South Coventry" />
+    <Item id="49012588.00" seq="2" description="69 Berkeley Road South Coventry" />
+    <Item id="49012589.00" seq="3" description="71 Berkeley Road South Coventry" />
+    <Item id="49012590.00" seq="4" description="73 Berkeley Road South Coventry" />
+    <Item id="49012591.00" seq="5" description="75 Berkeley Road South Coventry" />
+    <Item id="49012592.00" seq="6" description="77 Berkeley Road South Coventry" />
+    <Item id="49012593.00" seq="7" description="79 Berkeley Road South Coventry" />
+
+    <Item id="49012594.00" seq="8" description="81 Berkeley Road South Coventry" />
+    <Item id="49012595.00" seq="9" description="83 Berkeley Road South Coventry" />
+    <Item id="49012596.00" seq="10" description="85 Berkeley Road South Coventry" />
+    <Item id="49012597.00" seq="11" description="87 Berkeley Road South Coventry" />
+    <Item id="49012598.00" seq="12" description="89 Berkeley Road South Coventry" />
+    <Item id="49012599.00" seq="13" description="91 Berkeley Road South Coventry" />
+    <Item id="49012600.00" seq="14" description="93 Berkeley Road South Coventry" />
+    <Item id="49012601.00" seq="15" description="95 Berkeley Road South Coventry" />
+    <Item id="49012602.00" seq="16" description="97 Berkeley Road South Coventry" />
+
+    <Item id="49012603.00" seq="17" description="99 Berkeley Road South Coventry" />
+    <Item id="49012583.00" seq="18" description="101 Berkeley Road South Coventry" />
+    <Item id="49012584.00" seq="19" description="103 Berkeley Road South Coventry" />
+    <Item id="49012585.00" seq="20" description="105 Berkeley Road South Coventry" />
+    <Item id="49012586.00" seq="21" description="107 Berkeley Road South Coventry" />
+    <Item id="49012587.00" seq="22" description="109 Berkeley Road South Coventry" />
+    <Item id="49012604.00" seq="23" description="111 Berkeley Road South Coventry" />
+  </Data>
+</PostcodeAnywhere>
+
+

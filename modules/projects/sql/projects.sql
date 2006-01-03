@@ -1,0 +1,16 @@
+ALTER TABLE company1.flyspray_project ADD notify_email TEXT;
+ALTER TABLE company1.flyspray_project ALTER notify_email SET DEFAULT '';
+UPDATE company1.flyspray_project SET notify_email = '' WHERE notify_email IS NULL;
+ALTER TABLE company1.flyspray_project ALTER notify_email SET NOT NULL;
+ALTER TABLE company1.flyspray_project ADD notify_email_when NUMERIC(1);
+ALTER TABLE company1.flyspray_project ALTER notify_email_when SET DEFAULT 0;
+UPDATE company1.flyspray_project SET notify_email_when = 0 WHERE notify_email_when IS NULL;
+ALTER TABLE company1.flyspray_project ALTER notify_email_when SET NOT NULL;
+ALTER TABLE company1.flyspray_project ADD notify_jabber TEXT;
+ALTER TABLE company1.flyspray_project ALTER notify_jabber SET DEFAULT '';
+UPDATE company1.flyspray_project SET notify_jabber = '' WHERE notify_jabber IS NULL;
+ALTER TABLE company1.flyspray_project ALTER notify_jabber SET NOT NULL;
+ALTER TABLE company1.flyspray_project ADD notify_jabber_when NUMERIC(1);
+ALTER TABLE company1.flyspray_project ALTER notify_jabber_when SET DEFAULT 0;
+UPDATE company1.flyspray_project SET notify_jabber_when = 0 WHERE notify_jabber_when IS NULL;
+ALTER TABLE company1.flyspray_project ALTER notify_jabber_when SET NOT NULL;

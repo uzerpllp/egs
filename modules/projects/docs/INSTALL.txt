@@ -1,0 +1,46 @@
+Flyspray -  A ten step getting-started guide.
+
+Step One:  Unpack the compressed package into a directory where your web
+server can reach it.  It will extract into its own flyspray-version/ directory.
+If you're reading this, you've probably already done that.
+
+Step Two:  Create a mysql database for Flyspray to use.  Here is one way to do
+that, from the unix/linux command line, entering your mysql root password when
+prompted:
+
+mysqladmin -u root -p create flyspray
+
+If you prefer PostgreSQL, create flyspray database user:
+
+createuser -ADP flyspray
+
+and then a database itself:
+
+createdb -E UNICODE -O flyspray flyspray
+
+Step Three:  Make flyspray.conf.php writeable by the webserver.
+
+Step Four:  If you need the setup program to install ADOdb for you, make the
+adodb/ directory writeable by the webserver.
+
+Step Five:  Point your browser to http://yourserver/flyspray-version/ and
+follow along with the setup script.
+
+Step Six: Click the Projects link to set up your project options, user groups
+and lists.
+
+Step Seven:  If you wish to be able to upload attachments, you will need to make
+the attachments/ directory writeable by the webserver process.  The easiest way
+to do this is to make it world writeable.  In unix/linux this is done like this:
+
+chmod a+rwx attachments
+
+Note that this could be a security issue.  You really should learn to make it
+only writable by the process running your webserver.
+
+Step Eight: Close the sample task, and begin adding your own.
+
+Step Nine:  To report any bugs in Flyspray or request developer support, see
+the 'Support' link on the Flyspray website - http://flyspray.rocks.cc/?p=Support
+
+Step Ten:  Flyspray 0.9.8 is so easy to set up, there is no step ten.  Enjoy!

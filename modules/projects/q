@@ -1,0 +1,1 @@
+update flyspray_prefs set pref_value='http://demo.senokian.com/egs/modules/projects/' where pref_id=7;
