@@ -1,0 +1,392 @@
+/*--------------------------------------------------\
+|               |               | default.css       |
+|---------------------------------------------------|
+| For use with:                                     |
+| Web-ERP - http://web-erp.sourceforge.net          |
+| by Logic Works Ltd                                |
+|---------------------------------------------------|
+| Developer:                                        |
+| Shane Barnaby                                     |
+| Steve Kaill                                       |
+|---------------------------------------------------|
+| Note:                                             |
+| Changes can be made to this CSS that will be      |
+| reflected throughout Web-ERP.                     |
+|
+\--------------------------------------------------*/
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: white;
+	margin-left: 0px;
+	padding: 0px;
+	color: #333;
+}
+
+/*links before selection */
+a {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #333;
+}
+
+/*links on any screen when mouse is hovering over them */
+a:hover {
+	color: #6484a4;
+	text-decoration: underline;
+}
+
+table {
+  background-color: white;
+  border-spacing: 0px;
+}
+
+/*table detail items default format */
+td {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+}
+
+input {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	border: 1px solid #333;
+}
+
+select {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	border: 1px solid #333;
+}
+
+
+#topMenu {
+	width: 100%;
+	color: #333;
+	background-color: #FFFFFF;
+	border: none;
+	border-bottom: 1px solid #999999;
+}
+
+#trim {
+	background: "#FFFFFF";
+}
+
+#page {
+	width: 100%;
+	color: #333;
+	font-size: 10px;
+	white-space: nowrap;
+	border: none;
+}
+
+#menuImg {
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+}
+
+#mainMenu {
+	width: 100%;
+	color: #333;
+	background-color: #FFFFFF;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.header {
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.login {
+	background-color: #FFFFFF;
+	border: none;
+}
+
+.callout_main {
+	font-family: Verdana, Arial, Helvetica;
+	background-color: #FFFFFF;
+	border: none;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.main_page {
+	background-color: #FFFFFF;
+	border: none;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+ 	font-size: 12px;
+}
+
+/* Main page heading with quick menu within */
+.quick_menu {
+	background-color: #FFFFFF;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+ 	color: #333;
+	border-top: 2px #AAAAAA solid;
+	border-left: 2px #AAAAAA solid;
+	border-right: 2px #FFFFFF solid;
+	border-bottom: 4px #FFFFFF solid;
+	text-align: right;
+	/* position: relative;
+	top: 3px; */
+}
+
+/*The main page heading left part before quick menu */
+.quick_menu_left {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	border: 0px;
+	white-space: nowrap;
+	margin: 2px;
+	padding: 2px;
+	color: #333;
+}
+
+/*the Select Customer / Item / Supplier Menu tabs */
+.quick_menu_tabs {
+	background-color: #FFFFFF;
+	white-space: nowrap;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+}
+
+
+/*the Select Customer / Item / Supplier Menu tabs */
+.system_menu_tabs {
+	background-color: #FFFFFF;
+	white-space: nowrap;
+	border: none;
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.system_menu_tabs a {
+	font-size: 12px;
+   color: #333;
+}
+
+.system_menu_tabs a:hover {
+	font-size: 12px;
+	color: #333;
+}
+
+.main_area {
+	border: 2px inset #FFFFFF;
+	width: 100%;
+  background-color: #FFFFFF;
+}
+
+td.main_menu {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.main_menu table {
+	border: 0px;
+	width: 100%;
+	margin: 0px;
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.main_menu_unselected {
+	background-color: #999999;
+/*	position: relative; */
+	text-align: center;
+	white-space: nowrap;
+	background-image: url('/egs/themes/default/graphics/corner.gif');
+background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.main_menu { color: white; }
+.main_menu_selected {
+	background-color: #6484a4;
+/*	position: relative; */ 
+	text-align: center;
+	white-space: nowrap;
+	background-image: url('/egs/themes/default/graphics/corner.gif');
+background-repeat: no-repeat;
+	background-position: top right;
+}
+
+span.main_menu_nolink {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	color: #777777;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.main_menu a {
+	font-weight: normal;
+	color: white;
+}
+
+.main_menu a:hover {
+	text-decoration: underline;
+}
+
+.menu_group_img {
+	background-color: #CCCCCC;
+	text-align: center;
+	width: 90px;
+	position: relative;
+	left: 3px;
+}
+
+.menu_group_img img{
+	position: relative;
+	top: 10px;
+}
+
+.menu_group_area table{
+	border-spacing: 5px;
+}
+
+.blank_area {
+	border: 0px;
+	width: 100%;
+	display: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.menu_group_headers {
+  border: 1px solid #666;
+  width: 25%;
+}
+
+.menu_group_headers_text {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+}
+
+.menu_group_items {
+	vertical-align: top;
+	background-color: #FFFFFF;
+	border: 1px solid #666;
+	padding: 10px;
+}
+
+.menu_group_item {
+	background-color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+span.menu_group_nolink {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: normal;
+	color: #777777;
+	text-decoration: none;
+}
+
+.menu_group_item a {
+	color: #333;
+}
+
+.menu_group_items a:hover {
+	color: #6484a4;
+	text-decoration: underline;
+}
+
+#footer {
+	position: relative;
+	bottom: -3px;
+}
+
+.footer {
+	font-family: Verdana, Arial, Helvetica;
+	color: #333;
+	font-weight: normal;
+	font-size: 8px;
+}
+.legal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #333333;
+}
+
+.box1 {
+	border-color: #CCCCCC #333333 #333333 #CCCCCC;
+	border-width: medium;
+  border-style: ridge;
+}
+
+.promo {
+	font-family: "Times New Roman", Times, serif;
+	color: #000033;
+}
+
+.titlebar {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 9px;
+	color: #FFFFFF;
+  	background-color: #336699;
+}
+
+.dingbat {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #99CC99;
+  color: #333;
+	font-weight: bolder;
+	font-size: medium;
+}
+
+
+input.big {
+	width: 100px;
+}
+
+input.small {
+	width: 50px;
+}
+
+.tableheader {
+	font-weight: normal;
+	background-color: #cccce5;
+	color: #333;
+}
+
+.HelpTableHeader {
+	font-weight: bold;
+	background-color: #cccce5;
+	font-size: 18px;
+	color: #333;
+}
+
+.OsRow {
+	background-color: #234567;
+	color: #FFFFFF;
+}

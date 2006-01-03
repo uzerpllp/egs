@@ -1,0 +1,869 @@
+July 2004 - (owl-0.8)
+
+Enhancement Requests
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+		Download folder as ZIP Instead of Normal tar.gz file (configurable from the Admin section)
+			(Financial Contribution: Prominent Fluid Controls Ltd)
+882711 		Virtual Folders
+525487 		help file link
+609939 		Possible document peer review feature
+		Open Office Writer documents (sxw) Search Indexing
+		Allow to Change the order of Action Icons in the New Drop Down Menu (No Admin Interface in config/owl.php)
+		Allow to Hide Action Icons in the New Drop Down Menu (No Admin Interface in config/owl.php)
+1106939 	Change alt text for file/folder download.
+		Switched to unicode utf-8 in all languages supported for enhanced compatibility
+686384 		Add LDAP Authentication (Code Contributed by: bill.allison@bsw.co.uk)
+905955 		LDAP Authentication (Code Contributed by: bill.allison@bsw.co.uk)
+797155 		Anonymous user can not download
+1060609 	Allow/disallow mail function per user
+1061731 	Add to add/edit users - Initial Directory
+952064 		File catalog
+737296 		Messages to specific users
+1051487 	owl 0.73 - deleting versions...
+1005709 	Make styles user-settable
+737287 		Auto popup notification of news
+1047863 	owl 0.73 - automatic mail in general II
+		The Ability to choose a repository at login (Admin Can list more than One DB)
+1047894 	Add the name of the uploader
+1033182 	Detail information for folders just like the files...
+		PHPLAYERS Menus to replace the Icon Actions (Old Icons Still Available)
+1025341 	link to multiple locations
+	 	Bulk download files and folders
+1033184 	New Comment added icon instead of the number
+		New Owl backup Script (Aaron Sullivan (as7274@sbc.com))
+1044441 	owl 0.8: Folder description
+667861 		Keyword listing
+945750 		IndexATextFile index all the words
+931019 	 	add separate username for smtp auth
+1008930 	Email Language
+		Restore files from the Trash Can (Code Contributed by: Julien Laurent <djeyl@djeyl.net>)
+1013120         Search inside Excel files (Code Contributed by: Julien Laurent <djeyl@djeyl.net>)
+1026282 	View Documents in New Window
+1022700 	File-extentions & view-feature
+679837 		Authentication Enhancement
+991655 		pop3 authentication
+1010550 	Remember me
+827096 		Abliltiy to hide specific columns in browse mode
+908083 		Restrict by filetype/extension
+1005941 	Knowing who's updating
+929543 		file / folder counters hiding (0.73)
+737652 		Password protected files and folders
+		Added View for Open Office Doc Writer 
+1041313 	Copy folder - very useful
+1039723 	Copy folder
+1001837 	Copy Feature (Folder and Files)
+965750 		fixed column widths in folder view
+781517 		Bulk insert utility (INITIAL LOAD Tool)
+1001835 	Document Type
+987541 		Virus checking integration
+823675 		Filtering characters in filenames ( owl.php: $default->list_of_valid_chars_in_file_names)
+963428 		Bulk Upload documents
+860943 		Textbuttons
+637511 		Upload Folders - Not Bulk Load
+                More Flexible UI, More CSS, and Totaly Redesigned.
+968242 		Feature Request - What's Related
+692052          What's related - link
+--------------  was added to sourceforge
+
+
+BUGS Fixed
+----------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+1170441 	XHTML Error in owl/index.php
+1169804 	Confirm delete does not work in 0.80
+1169424 	URL Clicking
+1166285 	Missing Backslashes
+1167148 	Error - Buttons missing
+1166284 	JavaScript Errors
+1165325 	fPrintFormSelectBox has small bug
+1164644 	Error message in Bulk Move
+1150939         Error with php version 4.3.10
+1109234         Viewing notes OWL 0.80
+1112735         Username truncation problem
+1114529         Can't move files in 0.80 20050107
+1106054         user profile admin form
+1096628 	MySQL file for Owl 0.80 20041111
+1101131 	Error restoring multiple files 0.80
+1092435  	backup folder security hole
+1097172 	showrecords.php and file log
+1096375 	E-Mail Help
+1095982 	Owl 0.80 - help_browse - Go Back
+1095783 	Display Bug
+1095025 	E-Mail Tool
+1092819 	Mislabel in stats.php - owl 0.80
+1084320 	Remember me
+1078321 	Indexing words having Regular Expression MetaCharectors
+1075034 	Editing Root Folder - CVS Version
+1073251 	array is appended to keywords on save
+1029501 	Version 0.8 - bulk buttons
+1041012  	Member Group function not working properly
+1041298 	Why can I MOVE a folder with NO DELETE acces ????
+968046 		Polish (possibly all ISO-8859-2) file names
+986444 		i18n User Interface support
+982983 		bigindex.pl with antiword
+807371 		ereg_replace problem
+--------------  was added to sourceforge
+
+
+
+December 2003 - July 2004 (owl-0.73)
+
+Enhancement Requests 
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+		Added a SiteMap link at the bottom
+955625 		PHP to reset database
+956868 		Default group when uploading
+		Added Search within MS Word Documents (uses antiword)
+649259 		Custom Metadata Support
+                	(This feature contributed financialy by value4business GmbH)
+		In relation with BUG 921916 I have changed the way file icons are displayed
+                now Owl extracts the extension of the files, and if the ext.gif exists in the icon_filetype
+                directory then it is displayed if not a generic one is shown.  This will allow anyone that has
+                specific icon need to just ad the icons they want to the directory. COOL huh?
+905176 		A count of folders, documents, notes, & urls within a folder
+		Folder Search (name and description)
+898282 		No logging for file viewing
+640904 		Integrate with .htaccess
+		move.php changed to allow browsing to the destination folder for performance reasons.
+  			(This tool was payed for and donated to the Owl User community by Vertical AG in Switzerland)
+                  	http://www.vertical.ch
+		BULK Move of Folders 
+                    	( was payed for and donated to the Owl User community by Hematopathology Associates, LLC  Ocala, FL USA. )
+890743 		Partial word search support
+879798 		Wildcards in search function
+882608 		Allow users to take copies of locked files
+753822 		Home directories
+857617 		Home (or Default) directory
+                search the comments added by rsa@newtec.be
+841424 		Totals in status bar
+ 		Added bmp as a file type that can be viewed
+797043 		Persistent logins
+612447 		Use cookies -> indefinite sessions
+804284 		active sessions independent from source ip
+		Upgraded phpmailer to 1.71
+		When the admin deletes a user a warning is displayed when the user is still owner of files and folders
+865453 		Add "New Comments" icon next to file
+857002   	Add - "My checked out files"
+750187 		Using Oracle RDBMS instead of MySQL
+
+
+BUGS Fixed
+----------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+992784          Search and Empty Document Types
+972049          metadata fields are not searchable?
+981250          URL list with more than one page (Part 1)
+                Problem with self registered user not having a HomeDir or InitialDir
+983059          Admin Log/Statistics Error
+                Added Better Check to the IP before doing gethostbyaddress on it.
+975630 	 	Search Results
+973383 		Sorting Folders
+972060 		Permission problem
+972051 		Remember me
+972050 		Display Records Error
+970579 		bug in ctable.php (corrected here)
+970532 		very minor display bug (correction included)
+962031 		Bad choice of pattern delimiter for preg_...
+967889 		Popup Description
+964172 		Logs and french language
+964185 		Empty string to int column in admin_db_modify (Postgres)
+		If the bulk buttons are disabled the Admin Should see them
+		Fixed admin/index.php  Homedir only shows the first 2 Levels of the tree
+961528 		owl.lib.php - SQL error (Postgresql)
+961402 		Set user's home dir - SQL error (Postgresql)
+961473 		Doctype admin - SQL errors (Postregsql)
+960932 		Document type customization, SQL error
+960761 		Firstdir in users table empty for new user (postgres)
+960600 	 	Parse Error in News.php File - 0.73
+960606 		Typo in postgres-tables.sql
+960663 		SQL synatx error in admin_dbmodify.php
+                Fixed issues with Changing folder permissions and propagating
+		Fixed issues with Search, and Search within Docs
+		Fixed issues with Quota, Created 2 functions to make it easier
+948635  	on stats.php gethostbyaddr error
+947255 		on owl.lib.php slash missing
+944665  	register.php button is not visible
+936289 		Spelling Error in Email
+929540  	0.72 / 0.73 Root Documents Rights Issue
+922098 		anon user bug
+921916 	  	RSDX_Blue1 Icon Error
+921164 		Issue with the search engine
+918384 		CC email doesn't work
+694511 		owl_use_fs = false and Postgresql (THANKS to kutsal)
+899729 		Error when updating a document with an apost in the name
+883049 		New-Button shows forbidden Note Info
+864817          Error in News Admin SQL select
+860937          lib/owl.lib.php
+860619          Having strange file name w/o file extension produces error
+
+
+
+April 2003 - December 2003 (owl-0.72)
+
+Enhancement Requests 
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+		New Set of Buttons and Icons (THANK YOU  rsdx)
+616336 		Policy Display for Administrators
+784225  	External Links
+541334 		Search using 'AND' condition
+		Added button style one can configure different buttons for different users
+		Added onMouseOver buttons for the Text Buttons
+827087 		Unlocking files by admin
+ 		Owner can change group Ownership and Ownership of a folder
+ 		Multiple Button Style per Language
+807326 		Default View Preference for Admins at Login
+681168 		Configure # items to display for directory
+			( was payed for and donated to the Owl User community by Vertical AG in Switzerland )
+- 		Added Polish Provided by Group dvb-z
+-		New OWL Logo by Carlos AKA radnix
+-		Admin and File Admin can recursively change folder and file permissions (Ianm)
+603705 		Rename Files
+780768 		Backup folder allows file upload
+774926 		File lock and versioning
+709574 		Ability to read Perl POD documentation
+		Ran all the code through Code Beautifier removed tabs etc..
+737554 		Admin Report
+746802 		HTML Tags in NOTE FORM
+729313 		user pulldown box on e-mail send dialog scrn..
+735665 		Reworking Disk Quotas 
+723528 		More File Types
+707743 		Improved Search, within TXT and PDF Files (Thanks Eric)
+734778 		Admin user folder ownership changing
+
+
+BUGS Fixed
+----------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+873668          Wrong mysql table call in admin/admin_dbmodify.php
+883532 		Warning: eregi() [function.eregi]
+		Fixed issue with IE and leaving main_header_bg_color to NULL or MISSING 
+                Fixed Small issue with Documents/folder/folder navigation bar when viewing properties
+797155 		Anonymous user can not download
+799582 		Small visual bug II.
+799576 		Small visual bug I.
+799602 		User footer
+798603 		Narrow to Wide view switch occurs
+797222		Quota icon
+779634          User auto-registration fails
+777480		Error while updating user properties
+697097 		owl 0.71 and postgres 7.3
+774955 		View feature does not work for ".zip" files
+773733 		Error while updating file (Owl-0.72-20030514)
+		When user assigns a group to a new file, his group is set by default not the assigned one.
+742523 		v 0.72 "Register" and "Forgot password" not working
+738241 		Send Document by email / No Error Msg - wrong auth check
+730091 		PRB using email address > 30 chars
+726915 		log files
+
+
+TOOLS 
+-----
+
+Created		Tool that allows you to migrate a mysql SiteScape 7 Database to Owl 0.72
+		 (This tool was payed for and donated to the Owl User community by Vertical AG in Switzerland)
+		  http://www.vertical.ch
+
+
+February 2003 - April 2003 (ow-0.71)
+
+Added 		Visual Representation of Quota Using Icons
+Added		Russian translation made by Yura <yura@80872.com>
+Fixed		Notification with attachmenst that have blanks in the name not making it.
+Fixed		Problem with viewing files when owl_use_fs = false and db compression is off.
+Fixed		Problem with Resticted view, and LookHD Feature creating files/folders-date-time
+Fixed		Performance Fixes around Displaying the File icons
+Added		Ability to display the status bar at bottom, top or both
+Added		News displayed as a popup or in a regular page
+Cleaned		printError function call made the submessage optional
+Changed		Allow Folder monitor now allows you to monitor if you can read the folder.
+Added		We now check to see that owl_tmpdir exists and is writable by the WEB Server.
+Fixed		When deleting folders, Files get deleted, but Monotired Flags from Moniotored_files table 
+		where not deleted, as well as comments associated with the file.
+Fixed		Remove Deleted Files From DB, Feature used to look at the whole DB, for better performance
+		It only looks at the current browsed directory.
+Cleaned		Owl Icons and graphics
+Cleaned		languag.inc files removed obsolet messages and organized the messages ( 4 Days work ) Never again
+Fixed		When language.inc was not found or not readable got a blank page, now you get a message.
+Added		File Creation Date that will not change as the file is updated.
+Added		Lastlogin and currentlogin to track when the user has last logged in.
+Added		Display the number of New Files and Updated files on the browse page.
+Added		Display of New / updated beside new or updated files.
+Added		Display of Current quota on the browse page if enabled
+Added		Icon to play mp3 files from the browse page
+Cleaned/Fixed	Added more checks to make the install easier, Checking that langauge files are readable as
+		well as libs.
+
+Enhancement Requests 
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+725520 		Bulgarian translation
+703943          POP Before SMTP
+711244 		Log Eraser 
+705568 		Change permissions of folder
+710380 		User Information
+710249 		News
+700723 		Statistics
+707742 		Back Buttons
+700109 		Documents without files...
+697443 		New item type of Note.
+701663 		Show MB instead of Bytes
+704431 		Possibility to view contents of ZIP archives without downloa
+703461 		comment Notification 
+702232 		search result should show...
+705929 		tmpdir too short
+703797 		userfooter.inc
+700689 		customizeable date/time format
+700274 		Switch to hide"Bulk" Operations
+700133 		News Block (for 7.1) Part II
+697313 		0.71: New Files Block Part II
+699418 		URL features
+698012 		backuped docs shouldn't...
+700107 		URLs
+694686 		News Block (for 7.1)
+697868 		search results should allow...
+698095 		Mime types in email attachments
+669991 		cron.php
+640204 		Drop down list
+692380 		search exclude old documents
+691573 		Support Collaboration Part II (This is the ability to add Comments to a file)
+517825  	Support Collaboration
+692383 		file description after update 
+690603 		What's new-page
+681175 		Hide Files with some extension
+678402 		Enhancement: Trash Can (Finacial Contribution was made by Vertical AG for this feature)
+687717 		Display of Description
+687385 		Add PPT as a viewable files type 
+687383 		Change default value attachfile=0
+686944 		Tille of the Webpage for URLs title (If title is blank get the URL's Title)
+681179 		New User Profile or Group
+682163  	Allow admin to specify temporary directory for downloads
+681188 		Prefix for Email Subjets
+
+BUGS Fixed
+----------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+726807 		userfooter at stats.php
+726832 		field size at table owl_log
+718756 		owl .71 20030327 Can't change group for a folder
+718790 		Owl 0.71 20030327 Cant monitor files
+718370 		Owl 0.71 File based permissions not working for groups
+718661 		view.php downloads file as "foo.ext" rather than filename
+716261 		final language.inc for Chinese
+716696 		Quotation marks in descriptions cause problems
+715492 		Error in note type.
+713563 		error in browse.php 0.7 sql query
+713329 		error in group owner
+709325 		Error in update script mysql-from-20020213
+708783 		downloading a folder fails if folder contains an URL
+706748 		Path to DOMTT Javascript files
+704543 		Folder Properties / Policy "double entries"
+702950 		German translation
+702955 		German Graphics - wrong Translation
+700786 		m for "Mega" in "Megabyte"
+697096 		owl 0.71: curlogin not null
+694489 		Error in "owl/owl-0.7/DOCS/postgresql-tables" file
+688380 		Problems when use $default->owl_use_fs = false
+684915 		Restricting Anonymous access
+
+
+October 2002 -  February 2003 (owl-0.7)
+
+Added 		Replaced New User and New group and Flush Sessions on the admin screen by Icons.
+Fixed		Problem with bringing the userprefs from screens other than the file browser.
+Added		The ability to change Site Wide html settings from the admin Page.
+Added		The ability to change Site Wide features from the admin Page.
+Added		The ability to add a URL.
+Fixed		Problem with prefs page giving You do not have access to this folder on change
+Added		From WES owldb version:
+		log.php:  Added code to enable download of previous versions,
+                          also changed sql query to sort by name.
+		view.php: added html/txt preview code
+Added		From WES owldb version:
+		admin/index.php: Database Backup (MYSQL) will have a look at postgres later
+Added		From WES owldb version db only functionality.
+Added		From WES owldb version: Full DB only access implemented with a number of bugs fixed.
+Added		From WES owldb version: Zip Folder and download 
+Fixed		Zip Folder not working with Normal Hard Drive File access.
+Fixed		Zip Folder not working with Windows.
+Added		Icons on the log page.
+Fixed		Gave the Search page a consitent look with the rest of OWL.
+Added		Picture of a star for the score on the search page.
+Added		tar path to prefs
+Fixed   	readhd.php, to ignore hidden Unix files files starting with .
+Added		Czech Local (Thanks Karel Rys)
+Added		background Picture support in the HTML prefs
+Fixed		Made the URL Links clickable for Mail readers that support HTML
+Fixed 		Checking that the upload_max_filesize and owl max upload size is not execed before copying the file
+Fixed		Session in Use message to use the login button now.
+Added		if the default->debug is set to false turn all php messages off
+Added		If the file is a MP3 File Display id3v1.x Tags on modify properties page (we will see for v2 tags later)
+Fixed		Cleaned up undefined variables when E_NOTICE is turned on.
+Fixed		Removed lang_logout from the message files, since its now a button
+Fixed		Removed lang_admin from the message files, since its now a button
+Fixed		Updated the French look to match the New Look
+Fixed		LookAT HD should not be available for DB only OWLZ
+Fixed		DB Backup on NT
+Added		Under Admin added the list of users that are member of the group your are editing.
+Fixed 		when not logged in the buttons at the top did not display in the view properties screen
+Fixed		Problem with hidding the backup directory
+Fixed		A few OWL log problems and enhancements
+Fixed		Problems with the LookAtHD Delete and with filenames that have ' in it.
+Fixed		Problems with description and ' in them.
+Fixed 		File Version log and long lines.
+Fixed		Deleting user, now deletes active_sessions from that user as well
+Added		rdbartz ( Richard Bartz ) Viewing PDF and DOC files   
+
+BUGS Fixed
+----------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+700278 		Owl 0.71 20030308: Check if Group already exists.
+681923 		Empty File name & Description in notification Email msg.
+674329 		Files & Descriptions with apostrophes
+649640 		German special characters in filenames 
+640323 		File/Folder titles and names
+674540 		Logs: IP Address not shown
+649640 		German special characters in filenames 
+674538 		Buglet: Log Filters
+673362 		postgresql-tables error -> no default prefs
+671150 		German language selection results in no display
+671120 		Buttons don't show when viewing Document properties
+670674 		SQL error when click root folder on search page
+670088 		Log viewing doesn't work in some cases
+670044 		Collapse view option isn't retained
+668678 		Error when admin is updating user info
+668305 		Newline typo in intranet/locale/NewEnglish
+668121 		Spelling error in login page
+667870 		Cancel button on file move page broken
+667866 		Accessing previous version of file
+667219 	 	postgres et al.
+665698 		OWL creates lot of open sessions! (I Reduced the amount but if you use notification still need more than one session per user)
+662799 		Searching results that use URLs - Bug
+657896 		filenames in backup folder not correct - SOLUTION
+656296 		create folder fails
+649605 		Log shows entries from another folders
+648485 		Version numbers are set back to 0.1
+648414 		Error deleting files
+648410 		Log-History shows entries from other fil
+649632 		Browse button doesn't work sometimes
+648388 		Log-History doesn't work correctly
+650477 		Failed Modify folder's security ( only in DB only Mode)
+649372 		version 07-20021204-problem (WITH URL's This was caused by Register Globals Support Fix)
+646109 		Folder .tar.gz download problem in UNIX
+647136 		Simultaneously .tar.gz folder download
+647151 		Temp dir not removed downloading folder
+645884 		file names and file log
+646839 		Language parce error
+640680 		session in use, access denied error
+644313		german language.inc file broken in 0.6
+642030		Extra '\' in b5 language.inc
+637909		Move folder problem - Episode II
+638408		Dowload files in MS are corrupt
+634457 		Empty folder problem
+634972 		owl.lib.php does not use $default prefs
+628029 		Renaming and deleting folders
+627981 		Typo in modify.php and dutch language
+588656 		Rename Folder - Unix vs. Windows
+627950 		upgrading in readme file
+627957 		Label CC not shown
+
+Enhancement Requests 
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+681180 		Include Logo Preference in web
+681182 		Forgot password enabled without Auto RA
+618386 		Batch options -- Move
+679695 		Allow user to specify starting version number for the docs.
+		When an administrator logs in Inactive sessions get cleaned up
+618386 		Batch options -- Email
+618386 		Batch options -- Delete
+678397 		Real Name and Login should be unique
+661333 		User self register Feature
+		Re: Feature Request: File Title (Sambarx)
+609675 		Support International Character Set
+674537 		Folder Description
+673698 		Syslog filtering - muliple selections
+605037 		Log Querys based on web
+515809 		Logging
+670678 		Add "Download" Icon in "File Properties" page
+670682 		Hide backup folder
+669917 		Members of a group
+616343 		Omit header.inc when login or logout
+668603 		Full functional owl_LookATHD (Deleted Files)
+663263 		Email a URL instead of file
+655285 		Anonymous Access
+650795 		Default/Anonymous User
+641258 		Anonymous logins?
+658038 		Email file as URL not attachment
+651743 		Email notification on Folder level (Only on that Folder, won't include the sub Folders)
+651575 		Email notification of Monitored files
+650483 		Hide non authorized folders in tree disp
+649776 		Admin preference for default permission
+609570 		Include Actions Icons at Search page
+628310 		Register Globals Off Support
+637502 		EMail Notification ( Most of are implemented File Monitoring should be another request)
+567549 		Dynamic-length text fields
+619788 		Change owner
+623688 		Group Designation by User
+611673 		Preferences Based on Web
+615545 		web links
+615347 		Links in the Path for Viewing
+630504		Hidden buttons
+
+
+
+
+August - October 2002 (owl-0.6)
+
+You must run the mysql-from-20020213 script.
+
+Added 		better checks in case a folder of file move fails due to Unix Perms.
+Added  		RE: Permissions - you wanted it...  bomber ( Ben Birnbaum )
+Implemented	Something I noticed and feel it is a bad idea, is that anyone with write permissions 
+                to a file can modiy the file and change it's permissions. bomber ( Ben Birnbaum )
+Added		Administrator is able to disable/enable user without having to delete the User 
+		(This should help in adding a anonymous (guest) User)
+Added		Anonymous User that can sign on multiple times. (Governed by the same rules as the other users)
+                This user is disabled by default
+Added		Allow the user to select his own language.
+Added		Spanish Language files. (THANKS iisraa)
+Added		Norwegian Language files. (THANKS Espen Svebak)
+Added		Danish Language files. (THANKS Jens W. Skov)
+Added		Users can receive email notification from multiple Email addresses (use , or ; as a separator)
+Added 		CleanUP of stale active sessions
+Added		Maxsession flag to allow any user to sign in more than 1 times;
+Added 		The ability to flush Active sessions for a particular User (Thanks WES) + a few bug 
+		Fixes.  Moved the Database, password, user info to config/owl.php
+Added		Display Current number of active sessions on the admin screen.
+Fixed		If you have short_open_tag = Off in php.ini Owl Failed changed
+		<? to <?php were needed.
+Added 		FAQ + Common Problem Section to README
+Added		$default->debug (Default False) This will allow me to provide 
+		more information to the admin when this is turned On. 
+		ei. Like path to where owl is trying to write the files on 
+			upload Failures etc
+Fixed		New User saved with maxsession instead of maxsession - 1
+Added		In the Browser added alternating color to make it esier to see the different lines
+		Colors configurable in config/html.php
+
+Enhancement Requests 
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+615362 		Groups Checkbox sorted when editing user
+616339 		CC: Checkbox when send email (Provided CC type in box)
+615352 		Include Title and desc, in the email
+615364 		Logout link at the administrator menu
+595367 		Anonymous viewing...
+604885 		SEnd Email with my default address
+603805 		Groups and users list sorted
+564846 		Emailing/Printing (Just Email was done)
+472725 		User selected language
+582714 		Documents version support (Just Closed this request)
+599496 		ability to disable/enable a user
+588764 		Multiple Sessions under one user name
+
+BUGS Fixed
+----------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+616563 		Can't modify Users
+618183 		Security bug - Intelligence
+621992		UPLOAD still Broken
+615812		README: Security Consideration is wrong
+618182 		Incorrect message displayed for bad pass
+616399 		small bugs
+616335 		Policy #58 (no Text)
+615809 		register_globals not on (<--- Rolled this one BACK)
+615804 		ALT_TEXT with Mozilla
+615439 		Inconsistent use of table name variables
+615359 		"Owl" string instead of UserTitle in mov
+615357 		More strings for language Files
+615350 		Include $lang_user in prefs.php
+615349 		Include $table_header_bg in modify.php
+615348 		Include $table_header_bg in pref.php
+609586 		BG Color for all tables in html.php
+609598 		Include two $lang_var in modify.php
+609596 		Not empty field for directory/file name 
+607891 		Issues with long filenames (>50 chars) increased filename to 255
+606698 		Languaje email notifivations ?
+606697 		Problems editing languaje
+603887 		International letters, creating folders
+603800 		ADministration and Move Menus Centered i
+603618 		Change the policy of the directory
+603754 		Error, Sql update when change policy
+603617 		Editing propierties of a file
+588687 		Move Folder or Files ( mv VS. rename not solved)
+601268 		Hardcoded english phrases
+601857 		small bug in view.php line 124/125,
+481348 		Member of multiple groups folder issue
+548994 		notification - always sent to everybody (Thanks Nathan Dietsch)
+588673          Rename Folder to an existing foldername
+576540          html nasty in IE6
+564811		Language hungarian
+556781		$lang_groupmember missing in dutch lang
+564764		password recoded when user modified
+554677		Variables
+554045		Directory deletion (This deletes everything Under that directory)
+556471		Notify - file update sends prev desc
+556467		Notify - file update sends prev desc
+554044		Backup folder creation
+556183		SQL Error when Updating document
+
+
+Jan 16, 2002
+------------
+added $default->restrict_view and $default->logo
+improved security - implemented recursive security check
+                  - Documents can be totally restricted without
+		    breaking image previews.
+changed is_file to file_exists
+changed exec() calls for mkdir and rm to mkdir() and rmdir()
+
+Dec 28, 2001
+------------
+
+BUGS Fixed
+----------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+472141          Folder/File Policy default
+496814          Column Sorts are not persistant
+495556 		File download sends incorrect headers
+506962          New pt_BR language.inc file
+
+
+
+
+Enhancement Requests
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+------          Check-in / Check-out / Version Control + Document Backup (daphne chong <dchong@it.uts.edu.au>)
+443729          encrypted passwords
+483073          Adding hierarchy to keywords (Contrib by Sunil Savkar)
+454187          Scan existing directory/file structure (Contrib by Anders Axesson)
+                The Documents Directory can be located anywhere you want now. 
+                Just Set $default->owl_FileDir in config/owl.php
+472726          Check the PHP version
+455899          Default Security Levels
+454612          Read/Write but no delete on folders
+448966          Finer grained user controls (This is done except ppl in the same group can update the file)
+433733          Higher granularity in file perm
+------          French Translation (Pascal Guillo)
+
+Oct 15, 2001
+------------
+modify.php altered to output human readable size instead of bytecount.
+
+
+Oct 5, 2001
+-----------
+
+Enhancement Requests
+--------------------
+
+Tracker Number  Description
+-------------   ---------------------------------------
+
+                Allow users to change their preferences by clicking on the username by the (logout)
+448009          Add email notification of uploads (
+                Added Portuguese (Thanks Maluco)
+                Added Chinese tw (Thanks Pigo Chu)
+
+
+Sep 22, 2001
+------------
+
+Enhancement Requests
+--------------------
+
+Tracker Number	Description
+------------- 	---------------------------------------
+
+424497          Sorting ascending and descending
+                Increased the Title(name column) to 80 Characters
+
+
+BUGS Fixed
+----------
+
+Tracker Number	Description
+------------- 	---------------------------------------
+433540          Delete User only works with eng. version
+457588          Version not available from web interface
+449395          expanded/collapse view bugs
+449394          add document policy bugs for admin
+448241          HTML-Syntax-Error in admin/index.php
+448232          mistake in admin_dbmodify.php
+433932          Fileupdate and Quotas
+433548          Problem with uppercase fileextensions
+457591          Sort by Modified sorts by alpha names
+
+
+May 06, 2001
+------------
+-> Tool tips added to the action icons
+-> Users can now belong to multiple groups
+-> Administartors get redirected to the Admin page on logon
+-> Administrators can assign a specific Group to a file or folder
+-> Added new file icons for the Microsoft file types (doc, xls, mdb, ppt) as well as pdf (Thanks DANAK)
+-> HTML Table width expanded default is now 90%.
+-> HTML Table width and BGCOLOR are configurable in the html.php file
+-> HTML BODY Parameters added to the html.php file
+-> Change the default timeout to 30 Minutes
+-> The admin group now has the same rights as the admin user
+
+BUGS Fixed
+----------
+
+Tracker Number	Description
+------------- 	---------------------------------------
+1053845 	Firefox remembers login name when admin edits profile
+418224 		Bug on line 173 of dbmodify.php
+415888		dbmodify.php error (here's the fix)
+418822 		Add user to another group
+421059 		File Icons
+406398 		Submitting file doesn't preserve expand
+421305 		2 Users can signon as the same username
+
+
+Mar 06, 2001
+------------
+->GUI change and enhancements
+->Better quota enforcement
+->Preview for tar/tar.gz files
+->Found a bug where security was not enforced for folder moving
+->"Nicer" error messages
+->New config option: $default->expand to determine default view style
+->Dutch translation added
+
+Feb 10, 2001
+------------
+->Better de language file
+->Buxfixes for browse.php, view.php, and postgresql.
+->Fixed problem where anyone could add users.
+
+Jan 29, 2001
+------------
+->finalized quota support
+->better error checking on folder creation
+
+Jan 24, 2001
+------------
+->small typos and bugfixes
+->avoided problem of creating non-unique username/password pairs
+->added user quota support
+
+Jan 05, 2001
+------------
+->Italian translation added (locale/it/ - Fulvio Malfatto)
+->Fixed up some misc bugs
+->Various visual enhancements/fixes
+->New search engine (search.php)
+
+Jan 04, 2001
+------------
+->Fixed bugs relating to folder creation and moving (dbmodify.php)
+
+Dec 29, 2000
+------------
+->Complete PostgreSQL compatability
+
+Dec 28, 2000
+------------
+->Fixed bug where error occured when downloading inside a folder (download.php)
+->Added some error checking
+
+Dec 26, 2000
+------------
+->More fixes and enhancements than you can shake a stick at (way too many to list)
+->COMPLETE code rewrite
+
+Dec 13, 2000
+------------
+->Minor bugfixes (all over)
+->Code cleanup
+
+Nov 29, 2000
+------------
+->Fixed filesize bug (database/upload.php)
+->Fixed spelling error (images/btn_colapse_view.gif)
+
+Oct 10, 2000
+------------
+->Started to implement logging facility
+->Fixed downloading bug (files/download.php)
+->Move functionality added (files/move.php, Nick Talbott) for administrator ONLY (for now)
+->Users must now login to access any php script (database/security.php)
+->Added delete confirmation for folders and files (files/view.php)
+->All tables now use config file for colors
+->Database structure changed slightly for version compatability (docs/tables-mysql)
+
+Sep 22, 2000
+------------
+->Added custom icons for common file types (files/view.php)
+->Added preview ability to gif and jpg files (files/view.php)
+
+Sep 12, 2000
+------------
+->Changed style sheet (files/styles.css)
+->Added a bunch of MIME code for correct file handling (Nick Talbott)
+->This time REALLY fixed bug when adding new user with group error (admin/modify.php)
+->Added administrative privs so that the administrator can modify anything 
+whenever there is a security check(database/security.php)
+->Small enhancements to the user/group management system (admin/)
+
+Aug 26, 2000
+------------
+->Fixed a bug when adding new user, the group is now set first time (admin/modify.php)
+->Owl now checks for security when deleting folders now (database/delete.php)
+->Integrated DGS Search into the engine for searching (search/)
+->Now config options for table colors (config.php)
+
+Aug 18, 2000
+------------
+->Enhancements to admin interface (admin/*)
+->The link to a folder is no longer just the icon, its the icon + name (files/view.php)
+->The auto_intrement was fixed so that the creation of more than 10 folders/files/users/groups is now possible.
+->Fixed an error where you could not upload if the tmp directory was on another partition.
+
+Aug 14, 2000
+------------
+->Changed the style sheet (files/styles.css)
+->The output displayed when browsing the knowledbase can now be sorted by the title, filename, size,
+modification date, or person who posted the file (files/view.php)
+->Created an administration tool for managing users and groups (admin/*)
+->Added ability to see who the owner and group owner is on a file and folder when either modifying or viewing
+details (files/modify.php, files/details.php)
+->Forgot to make the table "groups" auto increment the id number, fixed (docs/tables-mysql)
+
+Aug 10, 2000
+------------
+->Initial Release
