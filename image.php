@@ -110,7 +110,7 @@ if (isset ($_SESSION['loggedIn']) && $_SESSION['loggedIn']) {
 			case "png" :
 				$ctype = "image/png";
 				break;
-			case "pjpeg":
+			case "pjpeg":					
 			case "jpeg" :
 			case "jpg" :
 				$ctype = "image/jpg";

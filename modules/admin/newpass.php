@@ -50,7 +50,7 @@ $password = $admin->GeneratePassword();
 	$user['lastcompanylogin'] = EGS_COMPANY_ID;
 	if (!$db->Replace('users', $user, array('username'), true))
 		$errors[] = _('Error saving changing password');
-		$q='SELECT email FROM personoverview WHERE owner='.$db->qstr($username);
+		$q='SELECT email FROM personoverview WHERE userdetail=true AND owner='.$db->qstr($username);
 		
 		$to      = $db->GetOne($q);
 		

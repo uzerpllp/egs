@@ -165,11 +165,11 @@ if ($accessLevel > 0) {
 		$rightSpan[] = $managers;
 		}
 		/*things from the forumpost table*/
-		$comments = array ('type' => 'data', 'title' => _('Comments'), 'header' => array (_('Title'), _('Added'), _('Message'), _('Approved')), 'viewlink' => 'action=savecomment&amp;domainid='.intval($_GET['id']).'&amp;commentid=','newlinktext' => _('Export Comments'), 'newlink' => 'action=exportcomments&amp;export=tab&amp;domainid='.intval($_GET['id']),);
+		$comments = array ('type' => 'data', 'title' => _('Comments'), 'header' => array (_('Title'), _('Added'), _('Message'), _('Approved')), 'viewlink' => 'action=savecomment&amp;domainid='.intval($_GET['id']).'&amp;commentid=',);
 		
 		function comments(& $comments, $id, & $indents, & $pre, $indent) {
 			global $db, $domain;
-			$query = 'SELECT id, title, '.$db->SQLDate('d-m-Y', 'added').' AS added, CASE WHEN char_length(message) > 50 THEN substring(message,0,50) || \'...\' ELSE message END AS message, CASE WHEN approved THEN \'Yes\' ELSE \'No\' END AS approved	FROM forumpost WHERE companyid='.$db->qstr(EGS_COMPANY_ID).' AND forumpostid='.$db->qstr($id).' ORDER BY added';
+			$query = 'SELECT id, title, '.$db->SQLDate('m-d-Y', 'added').' AS added, CASE WHEN char_length(message) > 50 THEN substring(message,0,50) || \'...\' ELSE message END AS message, CASE WHEN approved THEN \'Yes\' ELSE \'No\' END AS approved	FROM forumpost WHERE companyid='.$db->qstr(EGS_COMPANY_ID).' AND forumpostid='.$db->qstr($id).' ORDER BY added';
 			
 			$rs = $db->Execute($query);
 			
