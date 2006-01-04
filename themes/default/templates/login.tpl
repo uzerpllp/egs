@@ -161,7 +161,7 @@ background-color: white;
 !Warning! Javascript must be enabled for proper operation of Enterprise Groupware System
 </noscript>
 <div class="footer" align="center">
-<div align="center"><a href="http://www.senokian.com/">Senokian Solutions Ltd</a>. &copy; 2002 - 2004 All rights reserved.</div>
+<div align="center"><a href="http://www.senokian.com/">Senokian Solutions Ltd</a>. &copy; 2002 - {$currentYear|default:"2006"} All rights reserved.</div>
 <div align="center"><a href="http://www.enterprisegroupwaresystem.org">Enterprise Groupware System</a> is Free Software released under the GNU/GPL License.</div></div>
 </body>
 </html>

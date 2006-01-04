@@ -70,15 +70,15 @@ td.overdue {
 div.autocompleteoptions {
 	background-color: #42ADD4;
 	z-index: 2;
-	filter:alpha(opacity=80);
-	opacity:0.9;
+	filter:alpha(opacity=50);
+	opacity:0.5;
 	color: #fff;
 	text-align: left;
 	padding: 2px;
 	width: auto;
+	margin-right: 20px;
 	max-height: 200px;
 	padding-bottom: 30px;
-	padding-right: 10px;
 	overflow: auto;	
 	
 }
@@ -94,11 +94,18 @@ div.autocompleteoptions {
 #projectchoices ul, div.autocompleteoptions ul {
 	padding:0;
 	margin:0;
+
 }
-#projectchoices li, div.autocompleteoptionsli {
+#projectchoices li, div.autocompleteoptions li {
 	padding: 0;
 	margin:0;
 	display: block;
+}
+#projectchoices li.ticket {
+	background-color: #44b;
+}
+#projectchoices li.ticket selected {
+
 }
 #projectchoices li.selected, div.autocompleteoptions li.selected {
 	color: #42ADD4;
