@@ -137,7 +137,16 @@ if (isset ($_SESSION['preferences']['homePreferences']) && in_array('announcemen
 if (isset ($_SESSION['preferences']['homePreferences']) && in_array('open_tickets', $_SESSION['preferences']['homePreferences'])) {
 	/* If the user has access to the ticket module show all open tickets */
 	if(in_array('ticketing', $_SESSION['modules'])) {
-					
+	$query ='SELECT t.id, t.queueid,  t.subject FROM ticket t , ticketqueue q WHERE'.
+			'('.
+				'(owner='.$db->qstr(EGS_USERNAME).' AND t.status<>'.$db->qstr('DEL').' AND t.status<>'.$db->qstr('CLO').' AND t.status<>'.$db->qstr('FIX').' AND t.status<>'.$db->qstr('WON').')'.
+				' OR status='.$db->qstr('CRE').
+			')'.
+			' AND (t.personid<>'.$db->qstr(EGS_PERSON_ID).' OR t.personid IS NULL)'.
+			' AND parentticketid IS NULL'.
+			' AND t.queueid=q.id AND q.companyid='.$db->qstr(EGS_COMPANY_ID).' ORDER BY t.id';
+			
+			
 			$query = '('.
 			'SELECT t.id, t.queueid,  t.subject FROM ticket t, ticketqueue q, 	queueaccess qa WHERE'.
 			'('.
