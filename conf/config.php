@@ -18,7 +18,7 @@ DEFINE('EGS_SERVER', 'http://where-egs-is');
 /* Tempory directory for file uploads */
 DEFINE('EGS_TMP_DIR', '/tmp');
 
-/* THe database credentials */
+/* The database credentials */
 define('EGS_DB_TYPE', 'pgsql');
 define('EGS_DB_USER', 'user');
 define('EGS_DB_PASSWORD', 'password');
@@ -476,7 +476,7 @@ $dbuser = EGS_DB_USER;
 $dbpass = EGS_DB_PASSWORD;
 $dbprefix = 'flyspray';
 
-/* $Revision: 1.56 $ */
+/* $Revision: 1.2 $ */
 	/*--------------------------------------------------\
 	| 		|               | config.php        |
 	|---------------------------------------------------|
