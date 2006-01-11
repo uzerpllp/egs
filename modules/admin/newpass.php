@@ -1,9 +1,8 @@
 <?php
-
 // +----------------------------------------------------------------------+
-// | Enterprise Groupware System (EGS) - Save User 1.0                    |
+// | Enterprise Groupware System (EGS) - New Password 1.0                 |
 // +----------------------------------------------------------------------+
-// | Copyright (c) 2002-2005 Jake Stride                                  |
+// | Copyright (c) 2002-2006 Senokian Solutions                           |
 // +----------------------------------------------------------------------+
 // | This file is part of EGS.                                            |
 // |                                                                      |
