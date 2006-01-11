@@ -268,9 +268,27 @@ if (isset ($_SESSION['modules']) && (in_array('contacts', $_SESSION['modules']) 
 
 				/* Show the open projects assigned to the contact */
 				if (($accessLevel > 1) && (isset ($_SESSION['modules']) && (in_array('projects', $_SESSION['modules'])))) {
-					$query = 'SELECT  p.id, p.jobno, p.name FROM project p, projectaccess a WHERE p.id=a.projectid AND p.companyid='.$db->qstr($_GET['id']).' AND a.companyid='.$db->qstr(EGS_COMPANY_ID).' AND a.username='.$db->qstr(EGS_USERNAME).' AND (archived='.$db->qstr('false').' ) ORDER BY p.jobno ASC';
+					$query = 'SELECT p.id,
+							         p.jobno,
+							         p.name
+							  FROM   project p,
+							         projectaccess a
+							  WHERE  p.id = a.projectid
+							  AND    p.companyid = ?
+							  AND a.companyid = ?
+							  AND a.username = ?
+							  AND archived = ?
+							  ORDER BY p.jobno ASC';
 
-					$rs = $db->Execute($query);
+					$rs = $db->Execute(
+						$query,
+						array(
+							$_GET['id'],
+							EGS_COMPANY_ID,
+							EGS_USERNAME,
+							'false'
+						)
+					);
 
 					if ($accessLevel > 2)
 						$projects = array ('type' => 'data', 'title' => _('Current Projects'));
@@ -458,7 +476,7 @@ if (isset ($_SESSION['modules']) && (in_array('contacts', $_SESSION['modules']) 
 				if ($accessLevel > 2)
 					$activities = array ('type' => 'data', 'title' => _('Open Activities'), 'header' => array (_('Name'), _('Type'), _('Attached To'), _('Contact'), _('Start Date'), _('End Date')), 'viewlink' => 'action=viewactivity&amp;id=', 'newlink' => 'action=saveactivity&amp;companyid='.intval($_GET['id']));
 				else
-					$activities = array ('type' => 'data', 'title' => _('Open ACtivities'), 'header' => array (_('Name'), _('Type'), _('Attached To'), _('Contact'), _('Start Date'), _('End Date')), 'viewlink' => 'action=viewactivity&amp;id=');
+					$activities = array ('type' => 'data', 'title' => _('Open Activities'), 'header' => array (_('Name'), _('Type'), _('Attached To'), _('Contact'), _('Start Date'), _('End Date')), 'viewlink' => 'action=viewactivity&amp;id=');
 
 				while (!$rs->EOF) {
 					$links[5][] = 'action=viewperson&amp;id='.$rs->fields['personid'];
