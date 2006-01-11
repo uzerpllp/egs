@@ -3,20 +3,30 @@ function ID(id){return document.getElementById(id);}
 function makeAjax(name,type) {
 companyid='';
 if(type=='person') {
-	companyid=ID('companyid').value;
-	
+	if(ID('companyid')) {
+		companyid=ID('companyid').value;
+	}
+
 }
+chars=1;
+if(type=='person'||type=='company')
+	chars=2;
 queueid=''
 if(type=='ticketsubqueue') {
-	queueid=ID('queueid').value;
+	if(ID('queueid')) {
+		queueid=ID('queueid').value;
+	}
 }
 new Ajax.Autocompleter(name, name+"choices",serverroot+"/src/ajax/ajaxchoose.php?"+sessionid+"&type="+type+"&companyid="+companyid+"&queueid="+queueid,
 										 {
 										 paramName: "value",
-										 frequency: 0.2,
-										 minChars: 2,
+										 frequency: 0.4,
+										 minChars: chars,
 										 afterUpdateElement:function(input,selected) {
-										 	ID(name+'id').value=selected.id;
+										 	if(!selected.id)
+										 		ID(name).value='';
+										 	else
+											 	ID(name+'id').value=selected.id;
 										 	ID(name+'b').innerHTML=' ';
 										 }
 										 

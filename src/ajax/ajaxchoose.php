@@ -60,7 +60,7 @@ if (isset($_SESSION['loggedIn']) ) {
 		$type = $_GET['type'];
 
 	$length = strlen($incoming);
-	if(isset($_SESSION['ajaxcache'][$type][$incoming])) {
+	if(false&&isset($_SESSION['ajaxcache'][$type][$incoming])) {
 		echo '<ul>';
 		foreach($_SESSION['ajaxcache'][$type][$incoming] as $key=>$val) {
 			echo '<li id="'.$key.'">'.$val.'</li>';	
@@ -71,10 +71,10 @@ if (isset($_SESSION['loggedIn']) ) {
 		if ($type == 'person') {
 			//person might depend on company
 			$query = 'SELECT DISTINCT p.id, p.firstname || \' \' || p.surname';
-			if(!isset($_GET['companyid'])) 
+			if(!isset($_GET['companyid'])||$_GET['companyid']=='') 
 				$query.='|| \' (\' || p.company || \')\' ';
 			
-			$query.=' AS name FROM personoverview p LEFT OUTER JOIN company c ON (p.companyid=c.id), personaccess a WHERE p.id=a.personid AND ((a.type>2) OR (p.userdetail AND p.companyid='.$db->qstr(EGS_COMPANY_ID).')) AND a.personid=p.id AND a.usercompanyid='.$db->qstr(EGS_COMPANY_ID).' AND a.username='.$db->qstr(EGS_USERNAME);
+			$query.=' AS name FROM personoverview p LEFT OUTER JOIN company c ON (p.companyid=c.id), personaccess a WHERE p.id=a.personid AND ((a.type>=0) OR (p.userdetail AND p.companyid='.$db->qstr(EGS_COMPANY_ID).')) AND a.personid=p.id AND a.usercompanyid='.$db->qstr(EGS_COMPANY_ID).' AND a.username='.$db->qstr(EGS_USERNAME);
 			
 			if(isset($_GET['companyid'])&&$_GET['companyid']!='') {
 				
@@ -100,7 +100,7 @@ if (isset($_SESSION['loggedIn']) ) {
 			
 		}
 		else if ($type=='ticketsubqueue') {
-			$query = 'SELECT id, name FROM internalqueue WHERE companyid='.$db->qstr(EGS_COMPANY_ID);
+			$query = 'SELECT DISTINCT q.id, name FROM internalqueue q JOIN internalqueueaccess a ON (q.id=a.id) WHERE q.companyid='.$db->qstr(EGS_COMPANY_ID);
 			if(isset($_GET['queueid'])&&$_GET['queueid']!='') {
 				$query.='AND queueid='.$db->qstr($_GET['queueid']);	
 			}	
@@ -117,16 +117,20 @@ if (isset($_SESSION['loggedIn']) ) {
 			}
 			unset($_SESSION['ajaxcache'][$type]);
 			echo '<ul>';
-			foreach ($participants as $key => $val) {
-		
-				if ($incoming=='*'||$incoming != '' && substr(strtolower($val), 0, $length) == strtolower($incoming))
-				{
+			//echo '<li id="query">'.$query.'</li>';
+			$matched=false;
+				foreach ($participants as $key => $val) {
 					
-					$_SESSION['ajaxcache'][$type][$incoming][$key]=$val.'*';
-					echo '<li id="'.$key.'">'.$val.'</li>';	
+					if ($incoming=='*'|| (strpos($incoming,'*')!==false && strpos(strtolower($val),strtolower(str_replace('*','',$incoming)))!==false) ||($incoming != '' && substr(strtolower($val), 0, $length) == strtolower($incoming)))
+					{
+						$matched=true;
+						$_SESSION['ajaxcache'][$type][$incoming][$key]=$val.'*';
+						echo '<li class="ticket" id="'.$key.'">'.$val.'</li>';	
+					}
+			
 				}
-		
-			}
+			if(!$matched)
+				echo '<li disabled="disabled" readonly="readonly">No Matches</li>';
 			echo '</ul>';
 			$db->close();
 		}

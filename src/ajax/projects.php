@@ -27,7 +27,7 @@ if (isset($_SESSION['loggedIn']) ) {
 	
 	$incoming = $_REQUEST['value'];
 	$length = strlen($incoming);
-	$q = ' SELECT DISTINCT p.id as pid, p.jobno, p.name as pname FROM project p, projectaccess a WHERE  NOT p.completed AND p.id=a.projectid AND a.companyid='.$db->qstr(EGS_COMPANY_ID).' AND a.username='.$db->qstr(EGS_USERNAME).'ORDER BY p.jobno';
+	$q = 'SELECT DISTINCT \'p\'||p.id as pid, p.jobno, p.name as pname FROM project p, projectaccess a WHERE  NOT p.completed AND p.id=a.projectid AND a.companyid='.$db->qstr(EGS_COMPANY_ID).' AND a.username='.$db->qstr(EGS_USERNAME).'ORDER BY p.jobno';
 	$rs = $db->CacheExecute(120,$q);
 	$projects = array ();
 	$result = '<ul>';
@@ -36,10 +36,20 @@ if (isset($_SESSION['loggedIn']) ) {
 		
 		$rs->MoveNext();
 	}
+	$q2='SElECT DISTINCT \'t\'||t.id AS tid, t.subject AS name FROM ticket t WHERE companyid='.$db->qstr(EGS_COMPANY_ID);
+	$rs = $db->CacheExecute(120,$q2);
+	while (($rs !== false) && (!$rs->EOF)) {
+		$projects[$rs->fields['tid']] = trim($rs->fields['name']);
+		
+		$rs->MoveNext();
+	}
 	echo '<ul>';
 	foreach ($projects as $key => $val) {
-		if ($incoming != '' && substr(strtolower($val), 0, $length) == strtolower($incoming))
-			echo '<li id="'.$key.'">'.$val."</li>";
+		$class='';
+		if(substr($key,0,1)=='t')
+			$class=' class="ticket" ';
+		if ($incoming=='*'||$incoming != '' && substr(strtolower($val), 0, $length) == strtolower($incoming))
+			echo '<li'.$class.' id="'.$key.'">'.$val."</li>";
 			//$result .= '<li>'.$val."</li>";
 			
 	}
