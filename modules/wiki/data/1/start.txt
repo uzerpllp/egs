@@ -1,0 +1,3 @@
+====== Senokian Solutions Documentation and Support Centre ======
+
+Depending upon your level of access you will be able to access anything from our [[support:start|Support Documents]] and [[tutorials:start|Tutorials]] through to the [[egsdocumentation:start|Documentation/Help]] for the portal and the [[egstesting:start|Test Schedules]] for those users that are on our testing team (if you are interested in testing **EGS** and learning about new features of EGS before they are launched on the portal, please contact us via email @ <egstesting@senokian.com>.
