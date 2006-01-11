@@ -476,7 +476,7 @@ $dbuser = EGS_DB_USER;
 $dbpass = EGS_DB_PASSWORD;
 $dbprefix = 'flyspray';
 
-/* $Revision: 1.3 $ */
+/* $Revision: 1.56 $ */
 	/*--------------------------------------------------\
 	| 		|               | config.php        |
 	|---------------------------------------------------|
