@@ -23,6 +23,7 @@ if(isset($_SESSION['search'])) {
 }
 
 if (isset($_SESSION['loggedIn']) && ($_SESSION['loggedIn'] !== true)) {
+	$smarty->assign('currentYear',date('Y'));
 	$smarty->display(EGS_FILE_ROOT.'/themes/'.EGS_THEME.'/templates/login.tpl');
 } else if (!isset($_GET['print'])||!isset($_GET['action'])||!($_GET['action']=='labels'&&$_GET['print']==true)){
 	$smarty->assign("totalTime", sprintf("%01.4f", $totaltime));

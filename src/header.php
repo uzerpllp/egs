@@ -91,7 +91,7 @@ if (isset ($_POST['currentTaskSubmit']) && $_SESSION['loggedIn']) {
 	
 	
 	
-	print_r($taskerrors);
+	
 	if (!isset ($_POST['currentHours']) || !isset ($_POST['currentMinutes']) || !is_numeric($_POST['currentHours']) || !is_numeric($_POST['currentMinutes']) || $_POST['currentHours'] < 0 || $_POST['currentMinutes'] < 0 || ($_POST['currentHours'] == 0 && $_POST['currentMinutes'] == 0))
 		$taskerrors[] = _('Invalid Time Entered');
 	/*no previous hours*/
@@ -163,6 +163,7 @@ if (isset ($_POST['currentTaskSubmit']) && $_SESSION['loggedIn']) {
 		
 		}
 	}
+	$_POST=array();
 }
 
 /* Include the class containing generic EGS functions */
