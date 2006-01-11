@@ -29,6 +29,7 @@
 	$item['options']['name'] = _('Job Name');
 	$item['options']['companyname'] = _('Account');
 	$item['options']['personname'] = _('Contact');
+	$item['options']['categoryname'] = _('Category');
 	$item['options']['startdate'] = _('Start Date');
 	$item['options']['enddate'] = _('Due Date');
 	$item['options']['actualenddate'] = _('Actual End Date');

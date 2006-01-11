@@ -114,6 +114,9 @@ for ($i = 0; $i < sizeof($_SESSION['preferences']['projectColumns']); $i ++) {
 		case 'archived' :
 			$headings[$_SESSION['preferences']['projectColumns'][$i]] = _('Archived');
 			break;
+		case 'categoryname' :
+			$headings[$_SESSION['preferences']['projectColumns'][$i]] = _('Category');
+			break;
 	}
 }
 
@@ -206,7 +209,7 @@ for ($i = 0; $i < sizeof($_SESSION['preferences']['projectColumns']); $i ++) {
 	else
 		if (($_SESSION['preferences']['projectColumns'][$i] == 'completed') || ($_SESSION['preferences']['projectColumns'][$i] == 'invoiced') || ($_SESSION['preferences']['projectColumns'][$i] == 'archived'))
 			$query .= ' CASE WHEN p.'.$_SESSION['preferences']['projectColumns'][$i].' THEN '.$db->qstr(_('Yes')).' ELSE '.$db->qstr(_('No')).' END AS '.$_SESSION['preferences']['projectColumns'][$i];
-		else
+	else
 			$query .= 'p.'.$_SESSION['preferences']['projectColumns'][$i];
 	if (($i +1) != sizeof($_SESSION['preferences']['projectColumns']))
 		$query .= ', ';
