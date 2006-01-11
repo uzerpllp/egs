@@ -208,7 +208,7 @@
 	else if(isset($_SESSION['search'])) unset($_SESSION['search']);
 	
 	$query .= ' ORDER BY a.'.$_SESSION['accountOrder']. ' '.$_SESSION['accountSort'];
-
+	
 	/* Set up the pager and send the query */
 	$egs->page($query, 'account_page');	
 ?>
