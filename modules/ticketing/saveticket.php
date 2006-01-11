@@ -1,5 +1,5 @@
 <?php
-print_r($_SESSION['ajaxcache']);
+
 // +----------------------------------------------------------------------+
 // | Enterprise Groupware System (EGS) - Save Ticket 1.0                  |
 // +----------------------------------------------------------------------+
@@ -55,7 +55,7 @@ if (in_array('ticketing', $_SESSION['modules']) && (!isset ($id) || (isset ($id)
 
 		/* If project admin do the delete */
 		if(isset($_POST['delete'])) $saved = $ticket->deleteTicket($id);
-		else if(!isset($_POST['delete'])) $saved = $ticket->saveTicket($_POST, $id);
+		else if(isset($_POST['save'])) $saved = $ticket->saveTicket($_POST, $id);
 	}
 
 	/* Redirect to the ticket view if the form saved successfully */
@@ -150,6 +150,7 @@ if (in_array('ticketing', $_SESSION['modules']) && (!isset ($id) || (isset ($id)
 		$item['tag'] = _('Attach to Contact');
 		$item['name'] = 'person';
 		$item['hide'] = 'email';
+		
 		if (isset ($_POST['personid']))
 			$item['value'] = $_POST['personname'];
 		if (isset ($_POST['personid']))

@@ -22,7 +22,7 @@
 			if(isset($_GET['edit']))
 				unset($_GET['edit']);
 		}
-		if (sizeof($_POST) > 0) $ticket->saveReply($_POST);
+		if (sizeof($_POST) > 0&&Isset($_POST['submit'])) $ticket->saveReply($_POST);
 		
 		$query = 'SELECT t.id, t.queueid, t.owner, '.$db->SQLDate(str_replace('%', '', EGS_TIME_FORMAT), 't.time').' AS created, CASE WHEN u.updated IS NULL THEN '.$db->SQLDate(str_replace('%', '', EGS_TIME_FORMAT), 't.time').' ELSE '.$db->SQLDate(str_replace('%', '', EGS_TIME_FORMAT), 'u.updated').' END AS updated, '.$db->SQLDate(str_replace('%', '', EGS_DATE_FORMAT), 't.deadline').' AS deadline, CASE WHEN t.createdby IS NULL THEN '.$db->qstr(_('Ticketing System')).' ELSE t.createdby END AS createdby, t.owner, i.name AS internalqueue, c.name AS company, c.id AS companyid, p.firstname || \' \' || p.surname AS person, p.id AS personid, t.priority, t.internalpriority, t.status, t.internalstatus, CASE WHEN t.private THEN '.$db->qstr(_('Yes')).' ELSE '.$db->qstr(_('No')).' END AS private, t.subject, t.body FROM ticket t LEFT OUTER JOIN (SELECT parentticketid, max(time) AS updated FROM ticket GROUP BY parentticketid) u ON (t.id=u.parentticketid) LEFT OUTER JOIN company c ON (t.companyid=c.id) LEFT OUTER JOIN person p ON (t.personid=p.id) LEFT OUTER JOIN internalqueue i ON (t.internalqueueid=i.id) WHERE t.id='.$db->qstr($_GET['id']);
 
